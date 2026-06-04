@@ -31,15 +31,19 @@ export default function Nav() {
       }`}
       aria-label="Main navigation"
     >
-      <Link href="/" className="flex h-12 w-[180px] shrink-0 items-center" aria-label={`${siteConfig.name} home`}>
+      <Link href="/" className="flex shrink-0 items-center gap-3" aria-label={`${siteConfig.name} home`}>
         <Image
-          src="/images/navbar-logo.png"
-          alt={`${siteConfig.name} logo`}
-          width={180}
+          src="/images/navbar-logo-icon.png"
+          alt=""
+          width={56}
           height={48}
-          className="h-full w-full object-contain object-left"
+          className="h-12 w-14 object-contain"
           priority
+          aria-hidden
         />
+        <span className="text-xl font-bold tracking-tight text-primary md:text-headline-md">
+          {siteConfig.name}
+        </span>
       </Link>
 
       <div className="hidden items-center gap-8 md:flex">
