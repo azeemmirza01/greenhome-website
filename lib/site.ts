@@ -32,7 +32,7 @@ export const services = [
     icon: 'solar_power',
     description:
       'MCS-certified solar PV designed for your roof, with expert installation, battery storage options, and Smart Export Guarantee (SEG) setup to cut electricity bills.',
-    href: '/#services',
+    href: '/services/solar-panels',
   },
   {
     id: 'air-source-heat-pumps',
@@ -40,6 +40,6 @@ export const services = [
     icon: 'heat_pump',
     description:
       'High-efficiency air source heat pumps to replace fossil-fuel heating, cut carbon, and lower running costs. We can also talk you through Boiler Upgrade Scheme grants if you qualify.',
-    href: '/#services',
+    href: '/services/air-source-heat-pumps',
   },
 ] as const

@@ -43,8 +43,8 @@ export default function Footer() {
         <div>
           <h2 className="mb-6 font-semibold uppercase tracking-wider text-[#d6e4f9]">Services</h2>
           <ul className="space-y-4 text-sm">
-            <li><Link href="/#services" className="transition-colors hover:text-primary">Solar Panels</Link></li>
-            <li><Link href="/#services" className="transition-colors hover:text-primary">Air Source Heat Pumps</Link></li>
+            <li><Link href="/services/solar-panels" className="transition-colors hover:text-primary">Solar Panels</Link></li>
+            <li><Link href="/services/air-source-heat-pumps" className="transition-colors hover:text-primary">Air Source Heat Pumps</Link></li>
           </ul>
         </div>
 
