@@ -31,9 +31,15 @@ export default function Nav() {
       }`}
       aria-label="Main navigation"
     >
-      <Link href="/" className="flex items-center gap-3">
-        <Image src="/logo.svg" alt={`${siteConfig.name} logo`} width={48} height={48} className="h-12 w-12" priority />
-        <span className="text-headline-md font-bold text-primary">{siteConfig.name}</span>
+      <Link href="/" className="flex h-12 w-[180px] shrink-0 items-center" aria-label={`${siteConfig.name} home`}>
+        <Image
+          src="/images/navbar-logo.png"
+          alt={`${siteConfig.name} logo`}
+          width={180}
+          height={48}
+          className="h-full w-full object-contain object-left"
+          priority
+        />
       </Link>
 
       <div className="hidden items-center gap-8 md:flex">

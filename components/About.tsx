@@ -20,7 +20,7 @@ export default function About() {
               <span className="text-body-md font-semibold">Years of Trust</span>
             </div>
             <p className="text-sm text-on-surface-variant">
-              Delivering sustainable energy solutions to thousands of households across the United Kingdom.
+              Providing sustainable energy solutions to over 5,000 households across the Northwest.
             </p>
           </div>
         </div>
@@ -43,10 +43,10 @@ export default function About() {
               </div>
             </div>
             <div className="group flex gap-4">
-              <MaterialIcon name="location_on" className="text-primary transition-transform group-hover:scale-110" />
+              <MaterialIcon name="local_shipping" className="text-primary transition-transform group-hover:scale-110" />
               <div>
-                <h3 className="font-semibold">UK-Wide Coverage</h3>
-                <p className="text-sm text-on-surface-variant">Local teams in 20+ major cities since {siteConfig.foundingYear}.</p>
+                <h3 className="font-semibold">Local Experts</h3>
+                <p className="text-sm text-on-surface-variant">Proudly serving the PNW community since {siteConfig.foundingYear}.</p>
               </div>
             </div>
           </div>
