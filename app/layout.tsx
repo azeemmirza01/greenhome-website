@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: { canonical: siteConfig.url },
-  icons: { icon: '/images/navbar-logo-icon.png', apple: '/images/navbar-logo-icon.png' },
+  icons: { icon: '/images/brand-logo.png', apple: '/images/brand-logo.png' },
   category: 'Home Improvement',
 }
 
