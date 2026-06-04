@@ -8,9 +8,9 @@ import { breadcrumbSchema } from '@/lib/schema'
 import { siteConfig } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'UK Solar & Green Home Locations',
+  title: 'UK Solar & Heat Pump Locations',
   description:
-    'Find MCS-certified solar installation and sustainable home upgrades in 20 UK cities including London, Manchester, Birmingham, Glasgow, and Bristol.',
+    'MCS-certified solar panels and air source heat pumps in 20 UK cities: London, Manchester, Birmingham, Glasgow, Edinburgh, Cardiff, Belfast, and more.',
   alternates: { canonical: `${siteConfig.url}/locations` },
 }
 

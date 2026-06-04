@@ -31,10 +31,10 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
       aria-label="Request a free quote"
     >
       <div className="mb-8">
-        <h2 className="text-headline-lg">Get Your Free Quote</h2>
+        <h2 className="text-headline-lg">Get Your Free UK Quote</h2>
         {city && (
           <p className="mt-2 text-on-surface-variant">
-            Solar & sustainable home upgrades in <strong>{city}</strong>
+            Solar panels and heat pumps in <strong>{city}</strong>, UK
           </p>
         )}
       </div>
@@ -75,6 +75,7 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
             type="tel"
             required
             autoComplete="tel"
+            placeholder="e.g. 07XXX XXX XXX"
             className="w-full rounded-lg border border-outline-variant/50 bg-surface-container-low px-4 py-3 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
           />
         </div>
@@ -118,7 +119,7 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
           name="message"
           rows={3}
           className="w-full rounded-lg border border-outline-variant/50 bg-surface-container-low px-4 py-3 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-          placeholder="Roof type, approximate electricity bill, preferred contact time…"
+          placeholder="e.g. semi-detached, £180/month electric, evenings best to call"
         />
       </div>
 
@@ -129,7 +130,7 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
         Request Free Survey
       </button>
       <p className="mt-4 text-xs text-on-surface-variant">
-        By submitting you agree to be contacted about your enquiry. We never sell your data.
+        By submitting you agree we may contact you about your enquiry under UK GDPR. We never sell your data.
       </p>
     </form>
   )

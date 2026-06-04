@@ -31,7 +31,7 @@ export function organizationSchema() {
     sameAs: [siteConfig.social.linkedin],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Sustainable Home Energy Services',
+      name: 'UK Home Energy Services',
       itemListElement: ['Solar Panels', 'Air Source Heat Pumps'].map((name) => ({
         '@type': 'Offer',
         itemOffered: { '@type': 'Service', name, provider: { '@id': orgId } },
@@ -110,10 +110,14 @@ export function cityServiceSchema(city: UkCity) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: `Solar & Sustainable Home Upgrades in ${city.name}`,
+    name: `Solar Panels & Heat Pumps in ${city.name}, UK`,
     provider: { '@id': orgId },
-    areaServed: { '@type': 'City', name: city.name },
+    areaServed: {
+      '@type': 'City',
+      name: city.name,
+      containedInPlace: { '@type': 'AdministrativeArea', name: city.region },
+    },
     description: city.intro,
-    serviceType: 'Residential solar installation and energy efficiency',
+    serviceType: 'MCS-certified solar PV and air source heat pump installation',
   }
 }

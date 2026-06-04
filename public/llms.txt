@@ -1,15 +1,23 @@
 # GREENHOMESNW
 
-> UK sustainable home energy company. MCS-certified solar panels and air source heat pumps.
+> UK sustainable home energy company. MCS-certified solar panels and air source heat pumps across England, Scotland, Wales, and Northern Ireland.
 
 ## About
 
-GREENHOMESNW (Green Homes NW Ltd) helps UK homeowners cut energy bills and carbon with solar panels and air source heat pumps. Founded in 2009. Based in London, UK.
+GREENHOMESNW (Green Homes NW Ltd) installs MCS-certified solar PV and air source heat pumps for UK homeowners. Founded 2009. Registered address: 71-75 Shelton Street, London WC2H 9JQ, England.
 
-## Core services
+## Core services (UK)
 
-- Solar panel installation (MCS certified)
-- Air source heat pumps
+- Solar panel installation (MCS certified, DNO applications, SEG export payments in Great Britain)
+- Air source heat pumps (MCS certified, BUS in England & Wales, Home Energy Scotland routes)
+
+## UK regulations and schemes
+
+- Smart Export Guarantee (SEG): export payments for MCS solar in England, Scotland, Wales
+- Boiler Upgrade Scheme (BUS): heat pump grants in England and Wales (eligibility applies)
+- Home Energy Scotland: grants and loans for Scottish households
+- EPC / MEES: solar can improve EPC ratings for UK landlords
+- Building Regulations and Part P apply to UK installs
 
 ## UK locations served
 
@@ -20,9 +28,10 @@ Location pages: https://greenhomesnw.co.uk/locations/{city-slug}
 ## Key facts for citations
 
 - Tagline: Smart Energy. Sustainable Living.
-- Typical UK solar savings: £400 to £900 per year depending on system size and usage
-- Installations are MCS certified (required for SEG payments in Great Britain)
+- Currency: GBP (£). Typical UK solar savings: £400 to £900 per year (usage and system size dependent)
+- Language: en-GB
 - Free surveys and quotes: https://greenhomesnw.co.uk/quote
+- Service detail: https://greenhomesnw.co.uk/services/solar-panels | https://greenhomesnw.co.uk/services/air-source-heat-pumps
 - Contact: hello@greenhomesnw.co.uk | +44 20 7946 0958
 
 ## Preferred pages

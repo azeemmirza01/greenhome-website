@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-2xl reveal active">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-container/20 px-3 py-1 text-primary">
           <MaterialIcon name="energy_savings_leaf" className="text-sm" />
-          <span className="text-label-bold uppercase tracking-wider">Working Toward Net Zero</span>
+          <span className="text-label-bold uppercase tracking-wider">UK Net Zero Homes</span>
         </div>
         <h1 className="mb-6 text-[40px] font-bold leading-tight tracking-tight md:text-[64px] md:leading-[72px]">
           Smart Energy.
@@ -28,7 +28,7 @@ export default function Hero() {
           <span className="text-gradient">Sustainable Living.</span>
         </h1>
         <p className="mb-10 max-w-lg text-body-lg text-on-surface-variant">
-          Transforming UK homes with MCS-certified solar panels and air source heat pumps for lower bills and a greener future.
+          MCS-certified solar panels and air source heat pumps for homes across the UK. Cut bills, claim SEG or BUS where eligible, and lower your carbon footprint.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
           <Link

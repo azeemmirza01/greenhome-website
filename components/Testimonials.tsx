@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     quote:
-      'Professionalism at its finest. The monitoring app is addictive. We love tracking carbon offset and export earnings in Brighton.',
+      'Clear quote in pounds, tidy install, and SEG export showing on our bill within weeks. Brilliant service for our Brighton semi.',
     name: 'David Roberts',
     location: 'Brighton, UK',
   },

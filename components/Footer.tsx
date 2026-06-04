@@ -12,8 +12,8 @@ export default function Footer() {
         <div>
           <p className="mb-8 text-headline-md font-bold text-[#d6e4f9]">{siteConfig.name}</p>
           <p className="mb-6 text-sm leading-relaxed opacity-80">
-            Your premier partner for sustainable energy solutions across the United Kingdom. Dedicated to innovation and
-            ecological integrity.
+            MCS-certified solar panels and air source heat pumps for homes across England, Scotland, Wales, and Northern
+            Ireland. SEG, BUS, and UK grant guidance included.
           </p>
           <div className="flex gap-4">
             <a

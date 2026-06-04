@@ -3,18 +3,18 @@ import MaterialIcon from '@/components/MaterialIcon'
 const features = [
   {
     icon: 'savings',
-    title: 'Energy Saving',
-    text: 'Reduce grid dependency by up to 90% with integrated solar and battery storage tailored to UK consumption patterns.',
+    title: 'Lower Energy Bills',
+    text: 'Use your own solar during the day and cut reliance on grid electricity priced in pence per kWh. Batteries help shift more solar into evening use.',
   },
   {
     icon: 'payments',
-    title: 'Cost Efficiency',
-    text: 'Strong ROI through SEG export payments, reduced standing charges, and long-term protection from volatile unit rates.',
+    title: 'UK Grants & SEG',
+    text: 'Access Smart Export Guarantee payments for solar and Boiler Upgrade Scheme support for heat pumps where you qualify in England and Wales.',
   },
   {
     icon: 'nature_people',
-    title: 'Eco Impact',
-    text: 'Cut household carbon by tonnes annually while increasing EPC ratings and property appeal to eco-conscious buyers.',
+    title: 'EPC & Carbon',
+    text: 'Improve your home\'s EPC rating and reduce carbon emissions in line with UK net zero goals, adding long-term value for UK buyers and landlords.',
   },
 ]
 

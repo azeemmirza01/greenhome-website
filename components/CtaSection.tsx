@@ -10,11 +10,11 @@ export default function CtaSection() {
       />
       <div className="reveal relative z-10 mx-auto max-w-container-max text-center active">
         <h2 className="mb-8 text-[40px] font-bold leading-tight text-on-primary-fixed md:text-[56px]">
-          Start Your Green Journey Today
+          Get Your Free UK Home Survey
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-body-lg text-on-primary-fixed-variant">
-          Join thousands of UK homeowners saving money and cutting carbon. Request a free quote and we will call you back
-          within 24 hours.
+          Join UK homeowners cutting bills with MCS-certified solar and heat pumps. Free quote, SEG and BUS guidance, callback
+          within 24 hours (Mon to Fri).
         </p>
         <div className="flex flex-col justify-center gap-6 sm:flex-row">
           <Link

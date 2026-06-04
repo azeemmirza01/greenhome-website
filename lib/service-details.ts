@@ -11,42 +11,43 @@ export type ServiceDetail = {
   idealFor: string[]
 }
 
+import { ukGrants } from '@/lib/uk'
+
 export const serviceDetails: ServiceDetail[] = [
   {
     slug: 'solar-panels',
     title: 'Solar Panels',
     icon: 'solar_power',
     metaDescription:
-      'MCS-certified solar panel installation across the UK. Roof surveys, SEG setup, optional battery storage, and ongoing support from GREENHOMESNW.',
+      'MCS-certified solar panel installation across the UK. DNO applications, SEG setup, and battery options for English, Scottish, Welsh, and NI homes.',
     intro:
-      'We design and install solar PV systems that fit your roof, your usage, and your budget. From a straightforward terrace to a larger family home, we handle surveys, DNO paperwork, and commissioning so you can start saving on day one.',
+      'We design and install solar PV for UK homes, from terraced streets to detached properties. Our team manages roof surveys, scaffolding, MCS certification, and your district network operator (DNO) application so your system is legally connected and ready to earn SEG payments.',
     benefits: [
-      'Lower electricity bills by using your own power during the day',
-      'Earn export payments through the Smart Export Guarantee (SEG)',
-      'Increase property appeal with a better EPC rating in many cases',
-      'Cut household carbon without changing how you live day to day',
-      'Optional battery storage to use more of your own solar in the evening',
+      'Cut UK electricity bills by using your own power during daylight hours',
+      'Receive Smart Export Guarantee (SEG) payments from GB energy suppliers',
+      'Improve EPC ratings, helpful for landlords under UK MEES rules',
+      'Reduce household carbon in line with UK climate targets',
+      'Optional battery storage to use more solar after sunset',
     ],
     included: [
-      'Free home survey and honest generation estimate',
+      'Free UK home survey with shade and roof structure check',
       'MCS-certified design and installation',
-      'Scaffolding and electrical work managed by our team',
-      'DNO application and meter setup guidance',
-      'SEG registration support with your energy supplier',
-      'Handover pack with monitoring app setup where applicable',
+      'Scaffolding and Part P electrical compliance',
+      'DNO (G98/G99) application and export meter guidance',
+      'SEG registration help with your energy supplier',
+      'Handover with UK consumption and generation monitoring',
     ],
     process: [
-      { step: 'Survey', detail: 'We check roof condition, shading, and how you use electricity at home.' },
-      { step: 'Quote', detail: 'You receive a clear price, system size, and expected savings range.' },
-      { step: 'Install', detail: 'Most homes take 1 to 2 days on site once approvals are in place.' },
-      { step: 'Commission', detail: 'We test the system, complete paperwork, and show you how to track performance.' },
+      { step: 'Survey', detail: 'We assess roof type (tile, slate, flat), shading, and your annual kWh use from bills.' },
+      { step: 'Quote', detail: 'Fixed UK price in pounds, system size in kWp, and realistic savings range.' },
+      { step: 'Install', detail: 'Typically 1 to 2 days on site once DNO and scaffolding are booked.' },
+      { step: 'Commission', detail: 'MCS certificate issued and SEG set up so export payments can start.' },
     ],
-    grants:
-      'Some homes may qualify for local schemes or green finance products. We will flag anything relevant during your survey. SEG export payments apply to MCS-certified installs in Great Britain.',
+    grants: ukGrants.solar,
     idealFor: [
-      'Homeowners with good roof space and daytime electricity use',
-      'Landlords improving EPC ratings on rental properties',
-      'Households planning an EV and wanting cheaper home charging',
+      'UK homeowners with unshaded roof space and daytime usage',
+      'Landlords raising EPC ratings before 2028 MEES deadlines',
+      'Households with EVs charging at home on UK tariffs',
     ],
   },
   {
@@ -54,36 +55,35 @@ export const serviceDetails: ServiceDetail[] = [
     title: 'Air Source Heat Pumps',
     icon: 'heat_pump',
     metaDescription:
-      'Air source heat pump installation across the UK. MCS-certified installs, BUS grant guidance, and efficient home heating from GREENHOMESNW.',
+      'Air source heat pump installation across the UK. MCS-certified, BUS and Scottish grant guidance, Building Regulations compliant.',
     intro:
-      'Air source heat pumps pull warmth from outside air to heat your home and hot water. They work well in the UK climate and can replace gas or oil boilers when the property is suitable. We survey first, then recommend the right unit and controls for your rooms and radiators.',
+      'Air source heat pumps work in UK winters by extracting heat from outside air. They can replace gas, oil, or LPG boilers when your radiators or underfloor heating and insulation are suitable. We follow MCS standards and UK Building Regulations for a safe, efficient install.',
     benefits: [
-      'Lower running costs compared with many gas and oil boilers over time',
-      'Reduced carbon emissions for heating and hot water',
-      'One system for space heating and domestic hot water in most setups',
-      'Eligible homes may access the Boiler Upgrade Scheme (BUS)',
-      'Works alongside solar panels to further cut energy bills',
+      'Lower heating costs versus many UK gas and oil tariffs over the system lifetime',
+      'Cut carbon from home heating under UK net zero plans',
+      'One system for heating and hot water in most UK properties',
+      'BUS grants in England and Wales, plus Scottish support schemes',
+      'Pairs well with UK solar to offset electricity used by the pump',
     ],
     included: [
-      'Property heat loss check and suitability advice',
-      'MCS-certified heat pump supply and installation',
-      'Cylinder and pipework upgrades where required',
-      'Smart controls and handover training',
-      'Guidance on BUS grant applications if you are eligible',
-      'Aftercare support through our UK service team',
+      'Room-by-room heat loss survey to BS EN 12831 principles',
+      'MCS-certified heat pump and cylinder installation',
+      'Building Regulations notification and commissioning',
+      'Upgraded pipework, filters, and smart thermostat setup',
+      'Grant paperwork guidance (BUS, Home Energy Scotland, NI advice)',
+      'UK aftercare line and annual service reminders',
     ],
     process: [
-      { step: 'Survey', detail: 'We review insulation, radiators, and where the outdoor unit can sit.' },
-      { step: 'Design', detail: 'We size the heat pump and hot water cylinder for your home.' },
-      { step: 'Install', detail: 'Installation typically takes a few days depending on pipework changes.' },
-      { step: 'Handover', detail: 'We set your controls, explain running costs, and leave clear documentation.' },
+      { step: 'Survey', detail: 'We check insulation, emitter sizes, outdoor unit location, and noise planning rules.' },
+      { step: 'Design', detail: 'We specify kW output, cylinder size, and defrost strategy for your UK climate zone.' },
+      { step: 'Install', detail: 'Usually 3 to 5 days including electrical works and any radiator upgrades.' },
+      { step: 'Handover', detail: 'We programme weather compensation and explain running costs in pence per kWh.' },
     ],
-    grants:
-      'The Boiler Upgrade Scheme (BUS) offers grants toward air source heat pump installs for eligible properties in England and Wales. We help you understand the rules and paperwork before you commit.',
+    grants: ukGrants.heatPump,
     idealFor: [
-      'Homes moving away from gas, oil, or LPG heating',
-      'Properties with space for an outdoor unit and indoor cylinder',
-      'Householders who want stable, efficient heating long term',
+      'UK homes off the gas grid or ending fossil-fuel boilers',
+      'Properties with garden or yard space for the outdoor unit',
+      'Owners wanting predictable heating bills on UK energy tariffs',
     ],
   },
 ]

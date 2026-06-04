@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import MaterialIcon from '@/components/MaterialIcon'
 import { siteConfig } from '@/lib/site'
+import { ukMarket } from '@/lib/uk'
 
 export default function About() {
   return (
@@ -9,7 +10,7 @@ export default function About() {
         <div className="reveal relative h-[500px] overflow-hidden rounded-3xl shadow-2xl active">
           <Image
             src="/images/about.png"
-            alt="Sustainable smart home technology in a modern UK property"
+            alt="Smart home energy monitor in a UK property"
             fill
             className="object-cover transition-transform duration-[5s] hover:scale-105"
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -17,10 +18,10 @@ export default function About() {
           <div className="glass absolute bottom-8 left-8 max-w-xs rounded-2xl p-6">
             <div className="mb-2 flex items-center gap-4">
               <span className="text-3xl font-bold text-primary">15+</span>
-              <span className="text-body-md font-semibold">Years of Trust</span>
+              <span className="text-body-md font-semibold">Years in the UK</span>
             </div>
             <p className="text-sm text-on-surface-variant">
-              Providing sustainable energy solutions to over 5,000 households across the Northwest.
+              Trusted by homeowners across {ukMarket.nations} for solar and heat pump installs.
             </p>
           </div>
         </div>
@@ -29,24 +30,28 @@ export default function About() {
           <div>
             <h2 className="mb-6 text-headline-lg">Our Eco-Friendly Mission</h2>
             <p className="text-body-lg text-on-surface-variant">
-              At {siteConfig.name}, we believe luxury and sustainability belong together. Our mission is to engineer the
-              transition to renewable energy through elegant, high-performance solutions that respect the environment
-              while enhancing your lifestyle. Every install is MCS certified and meets UK building standards.
+              At {siteConfig.name}, we help UK households cut energy bills and carbon with MCS-certified solar panels
+              and air source heat pumps. Every project follows UK building regulations, proper DNO sign-off, and
+              manufacturer standards so your system is safe, compliant, and built to last.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="group flex gap-4">
               <MaterialIcon name="verified" className="text-primary transition-transform group-hover:scale-110" />
               <div>
-                <h3 className="font-semibold">Certified Tech</h3>
-                <p className="text-sm text-on-surface-variant">Tier-1 solar equipment and battery systems.</p>
+                <h3 className="font-semibold">MCS Certified</h3>
+                <p className="text-sm text-on-surface-variant">
+                  Required for SEG payments and recognised across the UK energy sector.
+                </p>
               </div>
             </div>
             <div className="group flex gap-4">
-              <MaterialIcon name="local_shipping" className="text-primary transition-transform group-hover:scale-110" />
+              <MaterialIcon name="location_on" className="text-primary transition-transform group-hover:scale-110" />
               <div>
-                <h3 className="font-semibold">Local Experts</h3>
-                <p className="text-sm text-on-surface-variant">Proudly serving the PNW community since {siteConfig.foundingYear}.</p>
+                <h3 className="font-semibold">UK-Wide Coverage</h3>
+                <p className="text-sm text-on-surface-variant">
+                  Local teams in 20+ cities across {ukMarket.nationsShort}, plus Northern Ireland surveys.
+                </p>
               </div>
             </div>
           </div>

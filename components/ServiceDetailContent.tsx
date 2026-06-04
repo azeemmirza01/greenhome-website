@@ -59,7 +59,7 @@ export default function ServiceDetailContent({ service }: Props) {
 
       {service.grants && (
         <section className="reveal glass mb-14 rounded-3xl p-8 text-left shadow-premium active">
-          <h2 className="mb-4 text-center text-headline-md">Grants and funding</h2>
+          <h2 className="mb-4 text-center text-headline-md">UK grants and funding</h2>
           <p className="text-body-md text-on-surface-variant">{service.grants}</p>
         </section>
       )}
@@ -78,7 +78,7 @@ export default function ServiceDetailContent({ service }: Props) {
           href="/quote"
           className="shimmer-btn rounded-full bg-primary px-8 py-4 text-label-bold text-on-primary shadow-lg transition-all hover:scale-105"
         >
-          Get a free quote
+          Get a free UK quote
         </Link>
         <Link
           href="/#services"

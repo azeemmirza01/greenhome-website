@@ -8,8 +8,8 @@ export default function LocationsHub() {
       <div className="reveal mb-12 active">
         <h1 className="mb-4 text-headline-lg md:text-display-lg">UK Locations We Serve</h1>
         <p className="max-w-2xl text-body-lg text-on-surface-variant">
-          MCS-certified solar and sustainable home upgrades across England, Scotland, Wales, and Northern Ireland.
-          Select your city for local savings estimates, grants, and a free survey.
+          MCS-certified solar panels and air source heat pumps across England, Scotland, Wales, and Northern Ireland.
+          Select your city for local savings in £, SEG/BUS grant notes, and a free UK survey.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

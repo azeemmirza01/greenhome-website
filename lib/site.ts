@@ -3,7 +3,8 @@ export const siteConfig = {
   legalName: 'Green Homes NW Ltd',
   tagline: 'Smart Energy. Sustainable Living.',
   description:
-    'UK sustainable home specialists delivering MCS-certified solar panels and air source heat pumps for lower bills and net-zero living.',
+    'UK home energy specialists installing MCS-certified solar panels and air source heat pumps across England, Scotland, Wales, and Northern Ireland.',
+  serviceArea: 'United Kingdom (England, Scotland, Wales, Northern Ireland)',
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://greenhomesnw.co.uk'),
@@ -31,7 +32,7 @@ export const services = [
     title: 'Solar Panels',
     icon: 'solar_power',
     description:
-      'MCS-certified solar PV designed for your roof, with expert installation, battery storage options, and Smart Export Guarantee (SEG) setup to cut electricity bills.',
+      'MCS-certified solar PV for UK homes. We handle roof surveys, DNO (district network operator) applications, SEG registration, and optional battery storage.',
     href: '/services/solar-panels',
   },
   {
@@ -39,7 +40,7 @@ export const services = [
     title: 'Air Source Heat Pumps',
     icon: 'heat_pump',
     description:
-      'High-efficiency air source heat pumps to replace fossil-fuel heating, cut carbon, and lower running costs. We can also talk you through Boiler Upgrade Scheme grants if you qualify.',
+      'Air source heat pumps for UK properties, replacing gas, oil, or LPG boilers where suitable. Guidance on BUS (England & Wales) and Scottish grant routes.',
     href: '/services/air-source-heat-pumps',
   },
 ] as const
