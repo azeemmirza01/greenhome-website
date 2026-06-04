@@ -1,47 +1,51 @@
-# Fix Vercel `DEPLOYMENT_NOT_FOUND`
+# Vercel test deploy (before Hostinger)
 
-`greenhomes-six.vercel.app` shows **404 DEPLOYMENT_NOT_FOUND** because the Vercel project exists but **no production deployment** was ever created. Your Next.js app builds successfully locally.
+Your app works locally (`npm run dev` → http://localhost:3000).  
+`greenhomes-six.vercel.app` fails because **that Vercel project has zero deployments** — not because the code is wrong.
 
-## Fastest fix (Vercel Dashboard — ~2 minutes)
+## Do this now (3 commands)
 
-1. Open **[Vercel Dashboard](https://vercel.com/dashboard)** → project **greenhomes-six**.
-2. Go to **Settings** → **Git**.
-3. If no repo is connected: **Connect Git Repository** → `azeemmirza01/greenhome-website` → **main**.
-4. Confirm:
-   - **Root Directory:** `.` (empty / project root)
-   - **Framework Preset:** Next.js
-   - **Build Command:** `npm run build` (default)
-5. Go to **Deployments** → **Redeploy** (or wait for auto-deploy after connecting Git).
-6. When status is **Ready**, open the **Production** URL from that deployment row (not an old bookmark).
-
-### Or import fresh (recommended if Git was never connected)
-
-1. **[Import greenhome-website](https://vercel.com/new/clone?repository-url=https://github.com/azeemmirza01/greenhome-website)**
-2. Click **Deploy**.
-3. Use the new `*.vercel.app` URL from the successful deployment.
-
-## Terminal fix (links folder → deploys)
+**Stop `npm run dev` first** (Ctrl+C), then in Terminal:
 
 ```bash
 cd /Users/azeemmirza/Desktop/zoDev/greenhome-website
-chmod +x scripts/deploy-vercel.sh
 ./scripts/deploy-vercel.sh
 ```
 
-Or manually:
+Or step by step:
 
 ```bash
-vercel login
-vercel link    # select greenhomes-six
-vercel --prod
+cd /Users/azeemmirza/Desktop/zoDev/greenhome-website
+npx vercel@latest login
+npx vercel@latest --prod
 ```
 
-## After deploy
+When `vercel --prod` asks:
 
-Optional env var (when you add a custom domain):
+| Prompt | Answer |
+|--------|--------|
+| Set up and deploy? | **Y** |
+| Which scope? | Your Vercel account |
+| Link to existing project? | **Y** → pick **greenhomes-six** *or* **N** to create **greenhome-website** |
+| Directory | **./** (press Enter) |
 
-| Variable | Value |
-|----------|--------|
-| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.co.uk` |
+Use the **Production URL printed at the end** — that is your live test site.
 
-Redeploy after adding.
+---
+
+## Dashboard alternative (no terminal)
+
+1. Open: https://vercel.com/new/clone?repository-url=https://github.com/azeemmirza01/greenhome-website  
+2. Click **Deploy** (do not create an empty project).  
+3. Open the URL from the **Ready** deployment.
+
+---
+
+## After testing → Hostinger
+
+Next.js needs **Node.js hosting** on Hostinger (VPS or Business with Node), not plain PHP shared hosting. Options:
+
+- **VPS** — run `npm run build && npm start`  
+- **Static export** — only if you drop dynamic city routes (not recommended for this site)
+
+We can set up Hostinger when you are ready.

@@ -1,19 +1,29 @@
 #!/usr/bin/env bash
-# Deploy GREENHOMESNW to Vercel (fixes DEPLOYMENT_NOT_FOUND)
+# One-time Vercel test deploy (stop `npm run dev` before running)
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-echo "→ Checking Vercel login..."
-if ! vercel whoami &>/dev/null; then
-  echo "   Run: vercel login"
-  vercel login
+VC="npx vercel@latest"
+
+echo "=============================================="
+echo " GREENHOMESNW — Vercel test deploy"
+echo "=============================================="
+echo ""
+echo "1) Stop 'npm run dev' first (Ctrl+C in that terminal)"
+echo "2) Browser will open for Vercel login if needed"
+echo ""
+
+if ! $VC whoami &>/dev/null; then
+  echo "→ Logging in to Vercel..."
+  $VC login
 fi
 
-echo "→ Linking this folder to your Vercel project (choose 'greenhomes-six' or create new)..."
-vercel link
+echo "→ Deploying to production..."
+echo "   (Answer prompts: link project = Yes, name = greenhome-website or greenhomes-six)"
+echo ""
 
-echo "→ Building and deploying to production..."
-vercel --prod
+$VC --prod
 
 echo ""
-echo "✓ Done. Open the Production URL shown above (not an old bookmark)."
+echo "✓ Copy the Production URL above and open it in your browser."
+echo "  Ignore greenhomes-six.vercel.app until this deploy succeeds."
