@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import MaterialIcon from '@/components/MaterialIcon'
 import { siteConfig } from '@/lib/site'
@@ -10,7 +11,29 @@ export default function Footer() {
     <footer className="bg-navy px-4 py-20 text-[#bac8dc] md:px-margin-desktop">
       <div className="mx-auto grid max-w-container-max grid-cols-1 gap-gutter md:grid-cols-4">
         <div>
-          <p className="mb-8 text-headline-md font-bold text-[#d6e4f9]">{siteConfig.name}</p>
+          <Link
+            href="/"
+            className="mb-8 inline-flex items-center gap-3"
+            aria-label={`${siteConfig.name} home`}
+          >
+            <Image
+              src="/images/Logoo.png"
+              alt=""
+              width={80}
+              height={58}
+              className="h-14 w-14 shrink-0 object-contain sm:h-16 sm:w-16"
+              unoptimized
+              aria-hidden
+            />
+            <span
+              className="inline-flex whitespace-nowrap text-xl font-bold leading-none tracking-tight sm:text-[22px]"
+              aria-hidden
+            >
+              <span className="text-primary">GREEN</span>
+              <span className="text-[#d6e4f9]">HOMES</span>
+              <span className="text-[#bac8dc]">NW</span>
+            </span>
+          </Link>
           <p className="mb-6 text-sm leading-relaxed opacity-80">
             MCS-certified solar panels and air source heat pumps for homes across England, Scotland, Wales, and Northern
             Ireland. SEG, BUS, and UK grant guidance included.
