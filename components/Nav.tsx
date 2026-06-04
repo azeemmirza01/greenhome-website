@@ -27,23 +27,33 @@ export default function Nav() {
   return (
     <nav
       className={`fixed top-0 z-50 mx-auto flex w-full max-w-container-max -translate-x-1/2 left-1/2 items-center justify-between px-4 py-4 transition-all duration-300 md:px-margin-desktop glass ${
-        scrolled ? 'py-2 shadow-lg !bg-white/85' : ''
+        scrolled ? 'py-2 shadow-lg' : ''
       }`}
       aria-label="Main navigation"
     >
       <Link
         href="/"
-        className="flex h-11 max-w-[min(100%,320px)] shrink-0 items-center sm:h-12 sm:max-w-[360px]"
+        className="flex shrink-0 items-center gap-3 sm:gap-4"
         aria-label={`${siteConfig.name} home`}
       >
         <Image
-          src="/images/brand-logo.png"
-          alt={`${siteConfig.name} — Installation, Energy, Retrofit`}
-          width={360}
-          height={52}
-          className="h-full w-full object-contain object-left"
+          src="/images/Logoo.png"
+          alt=""
+          width={96}
+          height={70}
+          className="h-20 w-20 bg-transparent object-contain sm:h-[88px] sm:w-[88px] md:h-16 md:w-24"
           priority
+          unoptimized
+          aria-hidden
         />
+        <span
+          className="inline-flex whitespace-nowrap text-[24px] font-bold leading-none tracking-tight sm:text-[22px] md:text-[24px]"
+          aria-hidden
+        >
+          <span className="text-[#2e7d32]">GREEN</span>
+          <span className="text-[#0d1b2a]">HOMES</span>
+          <span className="text-[#3a4859]">NW</span>
+        </span>
       </Link>
 
       <div className="hidden items-center gap-8 md:flex">
