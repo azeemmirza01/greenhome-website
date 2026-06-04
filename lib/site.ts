@@ -3,7 +3,7 @@ export const siteConfig = {
   legalName: 'Green Homes NW Ltd',
   tagline: 'Smart Energy. Sustainable Living.',
   description:
-    'UK sustainable home specialists delivering MCS-certified solar, battery storage, heat pumps, and smart energy upgrades for lower bills and net-zero living.',
+    'UK sustainable home specialists delivering MCS-certified solar panels and air source heat pumps for lower bills and net-zero living.',
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://greenhomesnw.co.uk'),
@@ -18,7 +18,7 @@ export const siteConfig = {
     postalCode: 'WC2H 9JQ',
     country: 'GB',
   },
-  hours: 'Mon–Fri 9:00–18:00',
+  hours: 'Mon to Fri, 9am to 6pm',
   foundingYear: 2009,
   social: {
     linkedin: 'https://www.linkedin.com/company/greenhomesnw',
@@ -27,27 +27,19 @@ export const siteConfig = {
 
 export const services = [
   {
-    id: 'installation',
-    title: 'Installation',
+    id: 'solar-panels',
+    title: 'Solar Panels',
     icon: 'solar_power',
     description:
-      'Expert solar panel and battery storage installation tailored to your home\'s roof geometry, orientation, and UK planning requirements.',
+      'MCS-certified solar PV designed for your roof, with expert installation, battery storage options, and Smart Export Guarantee (SEG) setup to cut electricity bills.',
     href: '/#services',
   },
   {
-    id: 'energy',
-    title: 'Energy',
-    icon: 'bolt',
+    id: 'air-source-heat-pumps',
+    title: 'Air Source Heat Pumps',
+    icon: 'heat_pump',
     description:
-      'Comprehensive energy audits and monitoring to optimise consumption, maximise SEG export income, and track real-time savings.',
-    href: '/#services',
-  },
-  {
-    id: 'improvement',
-    title: 'Improvement',
-    icon: 'upgrade',
-    description:
-      'Sustainable upgrades including air-source heat pumps, smart lighting, insulation, and HVAC optimisation for EPC gains.',
+      'High-efficiency air source heat pumps to replace fossil-fuel heating, cut carbon, and lower running costs. We can also talk you through Boiler Upgrade Scheme grants if you qualify.',
     href: '/#services',
   },
 ] as const

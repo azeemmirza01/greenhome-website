@@ -15,7 +15,7 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
     return (
       <div className="glass rounded-3xl p-10 text-center shadow-premium" role="status">
         <MaterialIcon name="check_circle" className="mb-4 text-5xl text-primary" />
-        <h3 className="mb-2 text-headline-md">Thank you — we&apos;ll be in touch within 24 hours.</h3>
+        <h3 className="mb-2 text-headline-md">Thank you. We&apos;ll be in touch within 24 hours.</h3>
         <p className="text-on-surface-variant">A GREENHOMESNW energy advisor will contact you to arrange your free survey.</p>
       </div>
     )
@@ -103,11 +103,9 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
           name="service"
           className="w-full rounded-lg border border-outline-variant/50 bg-surface-container-low px-4 py-3 focus:border-primary focus:outline-none"
         >
-          <option>Solar panel installation</option>
-          <option>Battery storage</option>
-          <option>Heat pump</option>
-          <option>Full home energy upgrade</option>
-          <option>Energy audit</option>
+          <option>Solar panels</option>
+          <option>Air source heat pump</option>
+          <option>Solar panels & heat pump</option>
         </select>
       </div>
 

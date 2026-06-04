@@ -56,7 +56,7 @@ export const ukCities: UkCity[] = [
     avgSavings: '£640',
     localGrant: 'West Midlands Net Zero Hub homeowner guidance',
     intro:
-      'Birmingham homeowners benefit from improving panel economics and strong export tariffs via SEG. We survey semis and detached homes across the West Midlands, sizing systems for typical 3–4 bed consumption profiles and recommending insulation before oversized arrays.',
+      'Birmingham homeowners benefit from improving panel economics and strong export tariffs via SEG. We survey semis and detached homes across the West Midlands and size systems for typical 3 and 4 bed homes.',
     whyChoose: [
       'Dedicated West Midlands installation crews',
       'Support with DNO applications to Western Power Distribution',
@@ -73,7 +73,7 @@ export const ukCities: UkCity[] = [
     avgSavings: '£610',
     localGrant: 'Leeds City Region warm homes advice',
     intro:
-      'Leeds properties—from stone terraces in Headingley to new builds at the South Bank—can achieve strong ROI with correctly tilted arrays. Our Yorkshire engineers model shading from chimneys and dormers to protect production forecasts.',
+      'Leeds has everything from stone terraces in Headingley to new builds at the South Bank, and both can work well with solar when the roof is right. Our Yorkshire team checks shading from chimneys and dormers so you get honest generation figures.',
     whyChoose: [
       'Yorkshire-based surveyors with local weather-adjusted yield data',
       'Battery options for evening peak usage after commuter returns',
@@ -192,7 +192,7 @@ export const ukCities: UkCity[] = [
     avgSavings: '£630',
     localGrant: 'Nottingham City Homes energy efficiency referrals',
     intro:
-      'Nottingham\'s central location and mix of 1930s housing makes it ideal for mid-size 3.6–4 kWp systems. GREENHOMESNW supports EPC improvements ahead of future MEES regulations for landlords.',
+      'Nottingham\'s central location and mix of 1930s housing suits mid-size 3.6 to 4 kWp systems. We help landlords improve EPC ratings ahead of future MEES rules.',
     whyChoose: [
       'Landlord EPC uplift packages',
       'East Midlands DNO liaison',
@@ -260,7 +260,7 @@ export const ukCities: UkCity[] = [
     avgSavings: '£635',
     localGrant: 'Leicestershire warm homes advice',
     intro:
-      'Leicester\'s diverse housing—from interwar semis to university rental stock—needs tailored system sizes. We help owner-occupiers and landlords meet efficiency goals with monitored installs and clear handover documentation.',
+      'Leicester has interwar semis, family homes, and rental stock, so system sizes vary. We tailor each quote and leave you with clear handover notes after install.',
     whyChoose: [
       'Student rental and HMO compliance experience',
       'Midlands-fast survey scheduling',

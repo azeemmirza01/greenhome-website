@@ -32,13 +32,7 @@ export function organizationSchema() {
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Sustainable Home Energy Services',
-      itemListElement: [
-        'Solar Panel Installation',
-        'Battery Storage',
-        'Energy Audits & Monitoring',
-        'Air Source Heat Pumps',
-        'Home Insulation & HVAC Optimisation',
-      ].map((name) => ({
+      itemListElement: ['Solar Panels', 'Air Source Heat Pumps'].map((name) => ({
         '@type': 'Offer',
         itemOffered: { '@type': 'Service', name, provider: { '@id': orgId } },
       })),
@@ -90,12 +84,12 @@ export function cityLocalBusinessSchema(city: UkCity) {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': `${pageUrl}#localbusiness`,
-    name: `${siteConfig.name} — ${city.name}`,
+    name: `${siteConfig.name} in ${city.name}`,
     url: pageUrl,
     telephone: siteConfig.phone,
     email: siteConfig.email,
     image: `${siteConfig.url}/images/hero.png`,
-    description: `MCS-certified solar, battery storage, and sustainable home upgrades in ${city.name}, ${city.region}. Average savings ${city.avgSavings}/year.`,
+    description: `MCS-certified solar panels and air source heat pumps in ${city.name}, ${city.region}. Typical savings around ${city.avgSavings} per year.`,
     parentOrganization: { '@id': orgId },
     areaServed: {
       '@type': 'City',

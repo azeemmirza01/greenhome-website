@@ -13,8 +13,8 @@ export default function CtaSection() {
           Start Your Green Journey Today
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-body-lg text-on-primary-fixed-variant">
-          Join thousands of UK homeowners saving money and cutting carbon. Get your personalised solar quote in under 5
-          minutes.
+          Join thousands of UK homeowners saving money and cutting carbon. Request a free quote and we will call you back
+          within 24 hours.
         </p>
         <div className="flex flex-col justify-center gap-6 sm:flex-row">
           <Link

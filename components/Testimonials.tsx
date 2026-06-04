@@ -6,19 +6,19 @@ import MaterialIcon from '@/components/MaterialIcon'
 const testimonials = [
   {
     quote:
-      'The transition was seamless. Our energy bills dropped immediately, and the panels look brilliant on our Victorian terrace in Manchester.',
+      'The whole process was straightforward. Our energy bills dropped straight away, and the panels look brilliant on our Victorian terrace in Manchester.',
     name: 'Sarah Jenkins',
     location: 'Manchester, UK',
   },
   {
     quote:
-      'Expert team, meticulous installation. They handled DNO approval and SEG paperwork—truly hands-off for our busy family in Birmingham.',
+      'Expert team, meticulous installation. They handled DNO approval and SEG paperwork, so it was genuinely hands-off for our busy family in Birmingham.',
     name: 'Michael Chen',
     location: 'Birmingham, UK',
   },
   {
     quote:
-      'Professionalism at its finest. The monitoring app is addictive—we love tracking carbon offset and export earnings in Brighton.',
+      'Professionalism at its finest. The monitoring app is addictive. We love tracking carbon offset and export earnings in Brighton.',
     name: 'David Roberts',
     location: 'Brighton, UK',
   },

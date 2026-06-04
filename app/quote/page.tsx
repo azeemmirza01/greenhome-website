@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Free Solar & Green Home Quote',
   description:
-    'Request a free MCS-certified solar and sustainable home survey anywhere in the UK. Get a personalised quote in under 5 minutes.',
+    'Request a free MCS-certified survey for solar panels or air source heat pumps anywhere in the UK. We will get back to you within 24 hours.',
   alternates: { canonical: `${siteConfig.url}/quote` },
   openGraph: {
     title: `Free Quote | ${siteConfig.name}`,

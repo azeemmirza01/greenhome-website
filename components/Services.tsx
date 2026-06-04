@@ -9,7 +9,7 @@ export default function Services() {
         <h2 className="mb-4 text-headline-lg">Core Services</h2>
         <div className="mx-auto h-1.5 w-20 rounded-full bg-primary" aria-hidden />
       </div>
-      <div className="grid grid-cols-1 gap-gutter md:grid-cols-3">
+      <div className="mx-auto grid max-w-4xl grid-cols-1 gap-gutter md:grid-cols-2">
         {services.map((s) => (
           <article
             key={s.id}

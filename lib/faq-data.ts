@@ -1,7 +1,7 @@
 export const faqData = [
   {
     q: 'How much can UK homeowners save with solar panels?',
-    a: 'Typical UK homes with 4 kWp systems save £400–£900 annually on electricity, depending on usage, tariff, and self-consumption. Battery storage can increase savings by shifting evening load to stored solar.',
+    a: 'Typical UK homes with 4 kWp systems save between £400 and £900 a year on electricity, depending on usage, tariff, and how much solar you use at home. A battery can help by storing daytime power for the evening.',
   },
   {
     q: 'Is GREENHOMESNW MCS certified?',
@@ -17,6 +17,6 @@ export const faqData = [
   },
   {
     q: 'How long does a residential solar installation take?',
-    a: 'Most domestic installs complete in 1–2 days once scaffolding and DNO approval are in place. Full projects including battery storage typically finish within 2–4 weeks from contract.',
+    a: 'Most domestic installs take 1 to 2 days once scaffolding and DNO approval are in place. If you add a battery, the full job usually wraps up within 2 to 4 weeks from signing.',
   },
 ] as const

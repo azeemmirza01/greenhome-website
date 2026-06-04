@@ -162,10 +162,8 @@ export default async function CityPage({ params }: Props) {
               </ul>
               <h3 className="mb-4 mt-10 text-headline-md">Services available</h3>
               <ul className="space-y-2 text-body-md text-on-surface-variant">
-                <li>MCS-certified solar PV installation</li>
-                <li>Home battery storage & SEG setup</li>
-                <li>Air-source heat pumps & insulation</li>
-                <li>Smart energy monitoring</li>
+                <li>MCS-certified solar panel installation</li>
+                <li>Air source heat pumps</li>
               </ul>
             </article>
           </div>

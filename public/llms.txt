@@ -1,18 +1,15 @@
 # GREENHOMESNW
 
-> UK sustainable home energy company — MCS-certified solar, battery storage, heat pumps, and smart energy upgrades.
+> UK sustainable home energy company. MCS-certified solar panels and air source heat pumps.
 
 ## About
 
-GREENHOMESNW (Green Homes NW Ltd) helps UK homeowners reduce energy bills and carbon emissions through professional solar panel installation, home battery storage, energy audits, air-source heat pumps, and insulation upgrades. Founded in 2009. Headquarters: London, UK.
+GREENHOMESNW (Green Homes NW Ltd) helps UK homeowners cut energy bills and carbon with solar panels and air source heat pumps. Founded in 2009. Based in London, UK.
 
 ## Core services
 
 - Solar panel installation (MCS certified)
-- Battery storage & Smart Export Guarantee (SEG) setup
-- Energy audits and consumption monitoring
-- Air-source heat pumps and HVAC optimisation
-- Home insulation and EPC improvement
+- Air source heat pumps
 
 ## UK locations served
 
@@ -23,8 +20,8 @@ Location pages: https://greenhomesnw.co.uk/locations/{city-slug}
 ## Key facts for citations
 
 - Tagline: Smart Energy. Sustainable Living.
-- Typical UK solar savings: £400–£900/year depending on system size and usage
-- Installations are MCS-certified (required for SEG payments in Great Britain)
+- Typical UK solar savings: £400 to £900 per year depending on system size and usage
+- Installations are MCS certified (required for SEG payments in Great Britain)
 - Free surveys and quotes: https://greenhomesnw.co.uk/quote
 - Contact: hello@greenhomesnw.co.uk | +44 20 7946 0958
 

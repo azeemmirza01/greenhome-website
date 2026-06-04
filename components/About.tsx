@@ -31,7 +31,7 @@ export default function About() {
             <p className="text-body-lg text-on-surface-variant">
               At {siteConfig.name}, we believe luxury and sustainability belong together. Our mission is to engineer the
               transition to renewable energy through elegant, high-performance solutions that respect the environment
-              while enhancing your lifestyle—backed by MCS certification and UK building standards.
+              while enhancing your lifestyle. Every install is MCS certified and meets UK building standards.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
