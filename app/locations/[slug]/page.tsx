@@ -24,21 +24,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = getCityBySlug(slug)
   if (!city) return {}
 
-  const title = `Solar Panels & Heat Pumps in ${city.name}, UK`
-  const description = `MCS-certified solar panels and air source heat pumps in ${city.name}, ${city.region}, UK. Typical savings ${city.avgSavings}/year. Free UK survey from ${siteConfig.name}.`
+  const title = `Heat Pump Grants & Solar on Lease in ${city.name}`
+  const description = `Air source heat pump grants up to £7,500 and no upfront cost solar panels in ${city.name}, ${city.region}. Typical savings ${city.avgSavings}/year. Free eligibility check from ${siteConfig.name}.`
 
   return {
     title,
     description,
     keywords: [
-      `solar panels ${city.name}`,
-      `solar installation ${city.name}`,
-      `MCS solar installer ${city.name}`,
-      `battery storage ${city.name}`,
-      `heat pump ${city.name}`,
-      `MCS heat pump ${city.name}`,
-      `SEG solar ${city.region}`,
-      `UK solar installer ${city.name}`,
+      `air source heat pump grant ${city.name}`,
+      `Boiler Upgrade Scheme ${city.name}`,
+      `solar panels on lease ${city.name}`,
+      `no upfront cost solar ${city.name}`,
+      `free heat pump ${city.name}`,
+      `MCS installer ${city.name}`,
+      `reduce energy bills ${city.region}`,
+      `renewable energy grants ${city.name}`,
     ],
     alternates: { canonical: `${siteConfig.url}/locations/${city.slug}` },
     openGraph: {
@@ -96,7 +96,7 @@ export default async function CityPage({ params }: Props) {
               <span className="text-on-surface">{city.name}</span>
             </nav>
             <h1 className="mb-4 max-w-3xl text-[36px] font-bold leading-tight md:text-display-lg">
-              Solar Panels & Heat Pumps in {city.name}, {city.region}
+              Heat Pump Grants & Solar on Lease in {city.name}
             </h1>
             <p className="max-w-2xl text-body-lg text-on-surface-variant">{city.intro}</p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -104,7 +104,7 @@ export default async function CityPage({ params }: Props) {
                 href="#quote"
                 className="shimmer-btn rounded-full bg-primary px-8 py-4 font-semibold text-on-primary shadow-lg transition-all hover:scale-105"
               >
-                Free {city.name} Survey
+                Check {city.name} Eligibility
               </Link>
               <a
                 href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
@@ -164,9 +164,9 @@ export default async function CityPage({ params }: Props) {
               </ul>
               <h3 className="mb-4 mt-10 text-headline-md">Services available</h3>
               <ul className="space-y-2 text-body-md text-on-surface-variant">
-                <li>MCS-certified solar PV (DNO and SEG support)</li>
-                <li>Air source heat pumps (BUS / Scottish grants where eligible)</li>
-                <li>Optional UK battery storage</li>
+                <li>Air source heat pump grants up to £7,500 (Boiler Upgrade Scheme)</li>
+                <li>Solar panels on lease with no upfront cost</li>
+                <li>MCS-certified install with grant paperwork handled for you</li>
               </ul>
             </article>
           </div>

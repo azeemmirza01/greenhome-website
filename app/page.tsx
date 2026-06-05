@@ -8,6 +8,7 @@ import Nav from '@/components/Nav'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
+import TrustBar from '@/components/TrustBar'
 import UkLocationsStrip from '@/components/UkLocationsStrip'
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
+        <TrustBar />
         <Services />
         <About />
         <Features />

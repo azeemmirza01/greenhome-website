@@ -12,7 +12,7 @@ export default function UkLocationsStrip() {
           <div>
             <h2 className="text-headline-lg">Serving Homeowners Across the UK</h2>
             <p className="mt-2 max-w-xl text-on-surface-variant">
-              Local MCS-certified teams in major cities. Find solar installation and green upgrades near you.
+              Local MCS-certified teams in major cities. Heat pump grants and no upfront cost solar near you.
             </p>
           </div>
           <Link href="/locations" className="font-semibold text-primary hover:underline">

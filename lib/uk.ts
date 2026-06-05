@@ -8,8 +8,8 @@ export const ukMarket = {
 } as const
 
 export const ukGrants = {
-  solar:
-    'Smart Export Guarantee (SEG) payments for MCS-certified solar in Great Britain. Some households may also qualify for ECO4 or local authority retrofit schemes depending on income and postcode.',
   heatPump:
-    'Boiler Upgrade Scheme (BUS) in England and Wales. Scotland: Home Energy Scotland grants and loans. Northern Ireland: contact us for current NI Energy Advice pathways.',
+    'The Government Boiler Upgrade Scheme (BUS) gives eligible homeowners in England and Wales a £7,500 grant towards an air source heat pump. In Scotland, Home Energy Scotland offers grants and interest-free loans. As MCS-certified installers we confirm your eligibility and apply on your behalf.',
+  solar:
+    'Our solar panels on lease and no upfront cost finance plans spread the investment so you avoid paying thousands up front. Smart Export Guarantee (SEG) payments then reward you for surplus energy you export back to the grid.',
 } as const

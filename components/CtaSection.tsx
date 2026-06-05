@@ -10,18 +10,18 @@ export default function CtaSection() {
       />
       <div className="reveal relative z-10 mx-auto max-w-container-max text-center active">
         <h2 className="mb-8 text-[40px] font-bold leading-tight text-on-primary-fixed md:text-[56px]">
-          Get Your Free UK Home Survey
+          See If You Qualify for £7,500
         </h2>
         <p className="mx-auto mb-12 max-w-2xl text-body-lg text-on-primary-fixed-variant">
-          Join UK homeowners cutting bills with MCS-certified solar and heat pumps. Free quote, SEG and BUS guidance, callback
-          within 24 hours (Mon to Fri).
+          Check your air source heat pump grant eligibility or get a no upfront cost solar quote. Free, no obligation, with a
+          callback within 24 hours (Mon to Fri).
         </p>
         <div className="flex flex-col justify-center gap-6 sm:flex-row">
           <Link
             href="/quote"
             className="shimmer-btn rounded-full bg-primary px-10 py-5 text-lg font-semibold text-on-primary shadow-xl transition-all hover:scale-105 active:scale-95"
           >
-            Request a Free Quote
+            Check My Eligibility
           </Link>
           <a
             href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}

@@ -6,19 +6,19 @@ import MaterialIcon from '@/components/MaterialIcon'
 const testimonials = [
   {
     quote:
-      'The whole process was straightforward. Our energy bills dropped straight away, and the panels look brilliant on our Victorian terrace in Manchester.',
+      'We had no idea we qualified for the £7,500 heat pump grant until GREENHOMESNW checked. They sorted the whole Boiler Upgrade Scheme application and our heating bills dropped straight away.',
     name: 'Sarah Jenkins',
     location: 'Manchester, UK',
   },
   {
     quote:
-      'Expert team, meticulous installation. They handled DNO approval and SEG paperwork, so it was genuinely hands-off for our busy family in Birmingham.',
+      'Solar with no upfront cost sounded too good to be true, but it was simple. The lease was clear, the install was tidy, and our electricity bills came down from day one in Birmingham.',
     name: 'Michael Chen',
     location: 'Birmingham, UK',
   },
   {
     quote:
-      'Clear quote in pounds, tidy install, and SEG export showing on our bill within weeks. Brilliant service for our Brighton semi.',
+      'Clear pricing, no upfront cost, and SEG export showing on our bill within weeks. Brilliant service for our Brighton semi.',
     name: 'David Roberts',
     location: 'Brighton, UK',
   },

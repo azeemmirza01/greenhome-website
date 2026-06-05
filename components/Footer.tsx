@@ -35,8 +35,8 @@ export default function Footer() {
             </span>
           </Link>
           <p className="mb-6 text-sm leading-relaxed opacity-80">
-            MCS-certified solar panels and air source heat pumps for homes across England, Scotland, Wales, and Northern
-            Ireland. SEG, BUS, and UK grant guidance included.
+            Government-backed air source heat pump grants up to £7,500 and solar panels on lease with no upfront cost.
+            MCS-certified renewable energy for homeowners across England, Scotland, and Wales.
           </p>
           <div className="flex gap-4">
             <a
@@ -66,8 +66,8 @@ export default function Footer() {
         <div>
           <h2 className="mb-6 font-semibold uppercase tracking-wider text-[#d6e4f9]">Services</h2>
           <ul className="space-y-4 text-sm">
-            <li><Link href="/services/solar-panels" className="transition-colors hover:text-primary">Solar Panels</Link></li>
-            <li><Link href="/services/air-source-heat-pumps" className="transition-colors hover:text-primary">Air Source Heat Pumps</Link></li>
+            <li><Link href="/services/air-source-heat-pump-grants" className="transition-colors hover:text-primary">Air Source Heat Pump Grants</Link></li>
+            <li><Link href="/services/solar-panels-on-lease" className="transition-colors hover:text-primary">Solar Panels on Lease</Link></li>
           </ul>
         </div>
 
@@ -94,11 +94,19 @@ export default function Footer() {
           <ul className="space-y-4 text-sm">
             <li className="flex gap-2">
               <MaterialIcon name="location_on" className="text-sm" />
-              {siteConfig.address.street}, {siteConfig.address.city}
+              {siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.postalCode}
             </li>
             <li className="flex gap-2">
               <MaterialIcon name="phone" className="text-sm" />
-              {siteConfig.phoneDisplay}
+              <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} className="transition-colors hover:text-primary">
+                {siteConfig.phoneDisplay}
+              </a>
+            </li>
+            <li className="flex gap-2">
+              <MaterialIcon name="mail" className="text-sm" />
+              <a href={`mailto:${siteConfig.email}`} className="break-all transition-colors hover:text-primary">
+                {siteConfig.email}
+              </a>
             </li>
             <li className="flex gap-2">
               <MaterialIcon name="schedule" className="text-sm" />
@@ -109,7 +117,11 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-20 max-w-container-max border-t border-white/10 pt-8 text-center text-xs opacity-60">
-        © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+        <p>
+          {siteConfig.legalName} is a {siteConfig.companyType.toLowerCase()} registered in {siteConfig.address.region}.
+          Registered office: {siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.postalCode}.
+        </p>
+        <p className="mt-2">© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
       </div>
     </footer>
   )

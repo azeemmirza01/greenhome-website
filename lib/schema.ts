@@ -31,8 +31,8 @@ export function organizationSchema() {
     sameAs: [siteConfig.social.linkedin],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'UK Home Energy Services',
-      itemListElement: ['Solar Panels', 'Air Source Heat Pumps'].map((name) => ({
+      name: 'UK Renewable Energy Services',
+      itemListElement: ['Air Source Heat Pump Grants', 'Solar Panels on Lease'].map((name) => ({
         '@type': 'Offer',
         itemOffered: { '@type': 'Service', name, provider: { '@id': orgId } },
       })),
@@ -89,7 +89,7 @@ export function cityLocalBusinessSchema(city: UkCity) {
     telephone: siteConfig.phone,
     email: siteConfig.email,
     image: `${siteConfig.url}/images/hero.png`,
-    description: `MCS-certified solar panels and air source heat pumps in ${city.name}, ${city.region}. Typical savings around ${city.avgSavings} per year.`,
+    description: `Air source heat pump grants up to £7,500 and solar panels on lease in ${city.name}, ${city.region}. Typical savings around ${city.avgSavings} per year.`,
     parentOrganization: { '@id': orgId },
     areaServed: {
       '@type': 'City',
@@ -110,7 +110,7 @@ export function cityServiceSchema(city: UkCity) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: `Solar Panels & Heat Pumps in ${city.name}, UK`,
+    name: `Heat Pump Grants & Solar on Lease in ${city.name}, UK`,
     provider: { '@id': orgId },
     areaServed: {
       '@type': 'City',
@@ -118,6 +118,6 @@ export function cityServiceSchema(city: UkCity) {
       containedInPlace: { '@type': 'AdministrativeArea', name: city.region },
     },
     description: city.intro,
-    serviceType: 'MCS-certified solar PV and air source heat pump installation',
+    serviceType: 'Air source heat pump grants and no upfront cost solar panel installation',
   }
 }

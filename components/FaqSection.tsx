@@ -5,7 +5,7 @@ export default function FaqSection() {
     <section className="mx-auto max-w-container-max px-4 py-24 md:px-margin-desktop" id="faq">
       <div className="reveal mb-12 text-center active">
         <h2 className="text-headline-lg">Frequently Asked Questions</h2>
-        <p className="mt-2 text-on-surface-variant">Clear answers for UK homeowners considering solar and green upgrades.</p>
+        <p className="mt-2 text-on-surface-variant">Clear answers on heat pump grants, solar on lease, and how much you could save.</p>
       </div>
       <div className="mx-auto max-w-3xl divide-y divide-outline-variant/40">
         {faqData.map((item) => (

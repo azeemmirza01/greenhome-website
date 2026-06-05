@@ -57,6 +57,49 @@ export default function ServiceDetailContent({ service }: Props) {
         </ol>
       </section>
 
+      {service.planOptions && service.planOptions.length > 0 && (
+        <section className="reveal mb-14 active">
+          <h2 className="mb-2 text-headline-md">Example monthly payments</h2>
+          <p className="mx-auto mb-8 max-w-xl text-body-md text-on-surface-variant">
+            Choose the upfront amount that suits you. The more you pay upfront, the lower your monthly payment.
+          </p>
+          <div className="mx-auto grid max-w-2xl gap-4 sm:grid-cols-3">
+            {service.planOptions.map((option, i) => (
+              <div
+                key={option.upfront}
+                className={`rounded-3xl p-6 text-center shadow-premium ${
+                  i === 0 ? 'bg-primary text-on-primary' : 'glass'
+                }`}
+              >
+                <p className="text-sm font-semibold uppercase tracking-wider opacity-80">{option.upfront}</p>
+                <p className="mt-3 text-4xl font-bold">{option.monthly}</p>
+                <p className="mt-1 text-sm opacity-80">per month</p>
+              </div>
+            ))}
+          </div>
+          {service.planNote && (
+            <p className="mx-auto mt-6 max-w-2xl text-xs text-on-surface-variant">{service.planNote}</p>
+          )}
+        </section>
+      )}
+
+      {service.guarantees && service.guarantees.length > 0 && (
+        <section className="reveal mb-14 active">
+          <h2 className="mb-8 text-headline-md">Our guarantees</h2>
+          <div className="mx-auto grid max-w-2xl gap-4 text-left sm:grid-cols-2">
+            {service.guarantees.map((g) => (
+              <div key={g.title} className="flex gap-3">
+                <MaterialIcon name="verified_user" className="shrink-0 text-primary" />
+                <div>
+                  <h3 className="font-semibold text-on-surface">{g.title}</h3>
+                  <p className="mt-1 text-body-md text-on-surface-variant">{g.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {service.grants && (
         <section className="reveal glass mb-14 rounded-3xl p-8 text-left shadow-premium active">
           <h2 className="mb-4 text-center text-headline-md">UK grants and funding</h2>

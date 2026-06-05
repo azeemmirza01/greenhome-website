@@ -3,18 +3,18 @@ import MaterialIcon from '@/components/MaterialIcon'
 const features = [
   {
     icon: 'savings',
-    title: 'Lower Energy Bills',
-    text: 'Use your own solar during the day and cut reliance on grid electricity priced in pence per kWh. Batteries help shift more solar into evening use.',
+    title: 'No Upfront Cost',
+    text: 'Get solar panels on lease and claim the £7,500 heat pump grant, so you can switch to renewable energy without a large bill to pay in advance.',
   },
   {
-    icon: 'payments',
-    title: 'UK Grants & SEG',
-    text: 'Access Smart Export Guarantee payments for solar and Boiler Upgrade Scheme support for heat pumps where you qualify in England and Wales.',
+    icon: 'verified_user',
+    title: 'Government-Backed & MCS',
+    text: 'We are MCS-certified and apply for your Boiler Upgrade Scheme grant directly, so every install meets the standards required for funding and SEG payments.',
   },
   {
     icon: 'nature_people',
-    title: 'EPC & Carbon',
-    text: 'Improve your home\'s EPC rating and reduce carbon emissions in line with UK net zero goals, adding long-term value for UK buyers and landlords.',
+    title: 'Lower Bills & Lower Carbon',
+    text: 'Cut your energy bills from day one, reduce your carbon footprint, and move your home towards net zero with clean, efficient technology.',
   },
 ]
 

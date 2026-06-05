@@ -6,9 +6,9 @@ export default function Services() {
   return (
     <section className="mx-auto max-w-container-max px-4 py-24 md:px-margin-desktop" id="services">
       <div className="reveal mb-16 text-center active">
-        <h2 className="mb-4 text-headline-lg">Our UK Services</h2>
+        <h2 className="mb-4 text-headline-lg">Two Ways to Cut Your Energy Bills</h2>
         <p className="mx-auto mb-4 max-w-xl text-on-surface-variant">
-          MCS-certified installs for homeowners across the United Kingdom
+          Government-backed grants and no upfront cost finance, fully managed by MCS-certified experts
         </p>
         <div className="mx-auto h-1.5 w-20 rounded-full bg-primary" aria-hidden />
       </div>

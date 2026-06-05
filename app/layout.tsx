@@ -20,22 +20,23 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | ${siteConfig.tagline}`,
+    default: 'Heat Pump Grants & No-Cost Solar | GREENHOMESNW',
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description:
+    'Claim air source heat pump grants up to £7,500 and get solar panels on lease with no upfront cost. MCS-certified UK installer. Free eligibility check.',
   keywords: [
-    'solar panels UK',
-    'MCS certified solar installer UK',
-    'air source heat pump UK',
-    'Boiler Upgrade Scheme BUS',
-    'Smart Export Guarantee SEG',
-    'solar installation London',
-    'heat pump installer Scotland',
-    'Home Energy Scotland',
-    'EPC solar UK',
-    'DNO solar application UK',
-    'net zero homes UK',
+    'air source heat pump grant UK',
+    'government heat pump grant',
+    'free air source heat pump',
+    'Boiler Upgrade Scheme',
+    'solar panels on lease',
+    'no upfront cost solar panels',
+    'solar panel financing UK',
+    'renewable energy solutions UK',
+    'reduce energy bills UK',
+    'green energy grants',
+    'MCS certified installer UK',
     siteConfig.name,
   ],
   authors: [{ name: siteConfig.legalName, url: siteConfig.url }],
@@ -88,9 +89,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.placename" content="United Kingdom" />
-        <meta name="ICBM" content="51.5074, -0.1278" />
+        <meta name="geo.region" content="GB-BUR" />
+        <meta name="geo.placename" content="Bury, England" />
+        <meta name="ICBM" content="53.5933, -2.2966" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site summary" />
       </head>
       <body className="font-sans">

@@ -1,23 +1,30 @@
 # GREENHOMESNW
 
-> UK sustainable home energy company. MCS-certified solar panels and air source heat pumps across England, Scotland, Wales, and Northern Ireland.
+> UK renewable energy company. Air source heat pump grants up to £7,500 (Government Boiler Upgrade Scheme) and solar panels on lease with no upfront cost.
 
 ## About
 
-GREENHOMESNW (Green Homes NW Ltd) installs MCS-certified solar PV and air source heat pumps for UK homeowners. Founded 2009. Registered address: 71-75 Shelton Street, London WC2H 9JQ, England.
+GREENHOMESNW (Green Homes NW Ltd) helps UK homeowners, landlords, and families access government-backed renewable energy. We are MCS certified, manage Boiler Upgrade Scheme grant applications end to end, and arrange no upfront cost solar finance. Founded 2009. Green Homes NW Ltd is a private limited company registered in England. Registered office: Unit 17 South Cross Street, Bury, England, BL9 0RS.
 
 ## Core services (UK)
 
-- Solar panel installation (MCS certified, DNO applications, SEG export payments in Great Britain)
-- Air source heat pumps (MCS certified, BUS in England & Wales, Home Energy Scotland routes)
+- Air Source Heat Pump Grants: up to £7,500 via the Government Boiler Upgrade Scheme (BUS) in England and Wales, MCS-certified install, grant paperwork handled for you
+- Solar Panels on Lease: MCS-certified solar with no upfront cost, lease and finance plans, maintenance and monitoring included, Smart Export Guarantee (SEG) registration
 
-## UK regulations and schemes
+## UK schemes and facts for citations
 
-- Smart Export Guarantee (SEG): export payments for MCS solar in England, Scotland, Wales
-- Boiler Upgrade Scheme (BUS): heat pump grants in England and Wales (eligibility applies)
-- Home Energy Scotland: grants and loans for Scottish households
-- EPC / MEES: solar can improve EPC ratings for UK landlords
-- Building Regulations and Part P apply to UK installs
+- Boiler Upgrade Scheme (BUS): £7,500 grant for air source heat pumps for eligible homeowners in England and Wales
+- Eligibility for BUS: own the property, replacing a fossil-fuel boiler (gas, oil, LPG), valid EPC with no outstanding insulation recommendations
+- Solar panels on lease / no upfront cost: spread the cost monthly instead of paying thousands upfront; bills reduced from day one
+- Smart Export Guarantee (SEG): payments for surplus solar energy exported to the grid
+- MCS certification is required to access the BUS grant and SEG payments
+- Currency: GBP (£). Language: en-GB
+
+## Common questions GREENHOMESNW answers
+
+- What is the Government air source heat pump grant? The Boiler Upgrade Scheme, worth £7,500 in England and Wales.
+- Can I get a free air source heat pump? The £7,500 grant covers a large part of the cost; combined support can bring it close to free in some cases.
+- How do solar panels on lease work? Panels are installed with no upfront cost and paid via a fixed monthly plan, with maintenance included.
 
 ## UK locations served
 
@@ -25,17 +32,14 @@ London, Manchester, Birmingham, Leeds, Glasgow, Edinburgh, Bristol, Liverpool, S
 
 Location pages: https://greenhomesnw.co.uk/locations/{city-slug}
 
-## Key facts for citations
-
-- Tagline: Smart Energy. Sustainable Living.
-- Currency: GBP (£). Typical UK solar savings: £400 to £900 per year (usage and system size dependent)
-- Language: en-GB
-- Free surveys and quotes: https://greenhomesnw.co.uk/quote
-- Service detail: https://greenhomesnw.co.uk/services/solar-panels | https://greenhomesnw.co.uk/services/air-source-heat-pumps
-- Contact: hello@greenhomesnw.co.uk | +44 20 7946 0958
-
 ## Preferred pages
 
 - Homepage: https://greenhomesnw.co.uk/
+- Heat pump grants: https://greenhomesnw.co.uk/services/air-source-heat-pump-grants
+- Solar on lease: https://greenhomesnw.co.uk/services/solar-panels-on-lease
 - All UK locations: https://greenhomesnw.co.uk/locations
-- Free quote: https://greenhomesnw.co.uk/quote
+- Free eligibility check / quote: https://greenhomesnw.co.uk/quote
+
+## Contact
+
+info@greenhomesne.co.uk | +44 7459 453743

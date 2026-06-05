@@ -31,10 +31,10 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
       aria-label="Request a free quote"
     >
       <div className="mb-8">
-        <h2 className="text-headline-lg">Get Your Free UK Quote</h2>
+        <h2 className="text-headline-lg">Check Your Eligibility</h2>
         {city && (
           <p className="mt-2 text-on-surface-variant">
-            Solar panels and heat pumps in <strong>{city}</strong>, UK
+            Heat pump grants and no upfront cost solar in <strong>{city}</strong>, UK
           </p>
         )}
       </div>
@@ -104,9 +104,9 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
           name="service"
           className="w-full rounded-lg border border-outline-variant/50 bg-surface-container-low px-4 py-3 focus:border-primary focus:outline-none"
         >
-          <option>Solar panels</option>
-          <option>Air source heat pump</option>
-          <option>Solar panels & heat pump</option>
+          <option>Air source heat pump grant</option>
+          <option>Solar panels on lease</option>
+          <option>Both heat pump grant & solar</option>
         </select>
       </div>
 
@@ -127,7 +127,7 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
         type="submit"
         className="shimmer-btn mt-8 w-full rounded-full bg-primary py-4 text-lg font-semibold text-on-primary shadow-lg transition-all hover:scale-[1.02] active:scale-95 md:w-auto md:px-12"
       >
-        Request Free Survey
+        Check My Eligibility
       </button>
       <p className="mt-4 text-xs text-on-surface-variant">
         By submitting you agree we may contact you about your enquiry under UK GDPR. We never sell your data.

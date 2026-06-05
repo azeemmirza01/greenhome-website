@@ -21,18 +21,19 @@ export default function About() {
               <span className="text-body-md font-semibold">Years in the UK</span>
             </div>
             <p className="text-sm text-on-surface-variant">
-              Trusted by homeowners across {ukMarket.nations} for solar and heat pump installs.
+              Trusted by homeowners across {ukMarket.nations} for grant-funded heat pumps and solar.
             </p>
           </div>
         </div>
 
         <div className="reveal space-y-8 active">
           <div>
-            <h2 className="mb-6 text-headline-lg">Our Eco-Friendly Mission</h2>
+            <h2 className="mb-6 text-headline-lg">Renewable Energy Made Simple and Affordable</h2>
             <p className="text-body-lg text-on-surface-variant">
-              At {siteConfig.name}, we help UK households cut energy bills and carbon with MCS-certified solar panels
-              and air source heat pumps. Every project follows UK building regulations, proper DNO sign-off, and
-              manufacturer standards so your system is safe, compliant, and built to last.
+              At {siteConfig.name}, we help UK homeowners, landlords, and families access government-backed renewable
+              energy without the usual cost or hassle. We handle your Boiler Upgrade Scheme grant from start to finish
+              and arrange solar panels on lease with no upfront cost, so cleaner energy and lower bills are within reach
+              for every home.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -41,7 +42,7 @@ export default function About() {
               <div>
                 <h3 className="font-semibold">MCS Certified</h3>
                 <p className="text-sm text-on-surface-variant">
-                  Required for SEG payments and recognised across the UK energy sector.
+                  Required to unlock the £7,500 grant and Smart Export Guarantee payments.
                 </p>
               </div>
             </div>

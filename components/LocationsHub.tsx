@@ -8,8 +8,8 @@ export default function LocationsHub() {
       <div className="reveal mb-12 active">
         <h1 className="mb-4 text-headline-lg md:text-display-lg">UK Locations We Serve</h1>
         <p className="max-w-2xl text-body-lg text-on-surface-variant">
-          MCS-certified solar panels and air source heat pumps across England, Scotland, Wales, and Northern Ireland.
-          Select your city for local savings in £, SEG/BUS grant notes, and a free UK survey.
+          Air source heat pump grants up to £7,500 and solar panels on lease with no upfront cost across England,
+          Scotland, and Wales. Select your city for local savings in £ and a free eligibility check.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
