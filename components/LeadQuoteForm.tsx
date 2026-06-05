@@ -10,6 +10,45 @@ type Props = {
 
 export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    if (loading) return
+    setLoading(true)
+    setError(null)
+
+    const formEl = e.currentTarget
+    const form = new FormData(formEl)
+    const payload = {
+      name: String(form.get('name') ?? ''),
+      email: String(form.get('email') ?? ''),
+      phone: String(form.get('phone') ?? ''),
+      postcode: String(form.get('postcode') ?? ''),
+      service: String(form.get('service') ?? ''),
+      message: String(form.get('message') ?? ''),
+      company: String(form.get('company') ?? ''),
+      city: city ?? '',
+    }
+
+    try {
+      const res = await fetch('/api/quote', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok || !data?.success) {
+        throw new Error(data?.message || 'Something went wrong. Please try again.')
+      }
+      setSubmitted(true)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   if (submitted) {
     return (
@@ -24,10 +63,7 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
   return (
     <form
       className="glass rounded-3xl p-8 shadow-premium md:p-10"
-      onSubmit={(e) => {
-        e.preventDefault()
-        setSubmitted(true)
-      }}
+      onSubmit={handleSubmit}
       aria-label="Request a free quote"
     >
       <div className="mb-8">
@@ -123,11 +159,23 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
         />
       </div>
 
+      <div className="absolute left-[-9999px]" aria-hidden>
+        <label htmlFor="company">Company</label>
+        <input id="company" name="company" type="text" tabIndex={-1} autoComplete="off" />
+      </div>
+
+      {error && (
+        <p className="mt-6 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700" role="alert">
+          {error}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="shimmer-btn mt-8 w-full rounded-full bg-primary py-4 text-lg font-semibold text-on-primary shadow-lg transition-all hover:scale-[1.02] active:scale-95 md:w-auto md:px-12"
+        disabled={loading}
+        className="shimmer-btn mt-8 w-full rounded-full bg-primary py-4 text-lg font-semibold text-on-primary shadow-lg transition-all hover:scale-[1.02] active:scale-95 disabled:cursor-not-allowed disabled:opacity-60 md:w-auto md:px-12"
       >
-        Check My Eligibility
+        {loading ? 'Sending…' : 'Check My Eligibility'}
       </button>
       <p className="mt-4 text-xs text-on-surface-variant">
         By submitting you agree we may contact you about your enquiry under UK GDPR. We never sell your data.
