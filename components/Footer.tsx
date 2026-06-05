@@ -17,22 +17,22 @@ export default function Footer() {
             aria-label={`${siteConfig.name} home`}
           >
             <Image
-              src="/images/Logoo.png"
+              src="/images/FooterLogoo.png"
               alt=""
-              width={80}
-              height={58}
-              className="h-14 w-14 shrink-0 object-contain sm:h-16 sm:w-16"
+              width={1024}
+              height={698}
+              className="h-20 w-auto shrink-0 object-contain sm:h-16"
               unoptimized
               aria-hidden
             />
-            <span
+            {/* <span
               className="inline-flex whitespace-nowrap text-xl font-bold leading-none tracking-tight sm:text-[22px]"
               aria-hidden
             >
               <span className="text-primary">GREEN</span>
               <span className="text-[#d6e4f9]">HOMES</span>
               <span className="text-[#bac8dc]">NW</span>
-            </span>
+            </span> */}
           </Link>
           <p className="mb-6 text-sm leading-relaxed opacity-80">
             Government-backed air source heat pump grants up to £7,500 and solar panels on lease with no upfront cost.
