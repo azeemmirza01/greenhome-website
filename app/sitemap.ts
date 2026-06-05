@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/site'
-import { getAllCitySlugs } from '@/lib/uk-cities'
 import { getAllServiceSlugs } from '@/lib/service-details'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -10,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: base, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     { url: `${base}/quote`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${base}/locations`, lastModified: now, changeFrequency: 'weekly', priority: 0.85 },
   ]
 
   const serviceRoutes: MetadataRoute.Sitemap = getAllServiceSlugs().map((slug) => ({
@@ -20,12 +18,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  const cityRoutes: MetadataRoute.Sitemap = getAllCitySlugs().map((slug) => ({
-    url: `${base}/locations/${slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
-
-  return [...staticRoutes, ...serviceRoutes, ...cityRoutes]
+  return [...staticRoutes, ...serviceRoutes]
 }

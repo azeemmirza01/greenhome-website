@@ -9,7 +9,6 @@ import RevealOnScroll from '@/components/RevealOnScroll'
 import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 import TrustBar from '@/components/TrustBar'
-import UkLocationsStrip from '@/components/UkLocationsStrip'
 
 export default function HomePage() {
   return (
@@ -21,7 +20,6 @@ export default function HomePage() {
         <Services />
         <About />
         <Features />
-        <UkLocationsStrip />
         <Testimonials />
         <FaqSection />
         <CtaSection />

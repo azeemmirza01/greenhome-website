@@ -26,18 +26,15 @@ GREENHOMESNW (Green Homes NW Ltd) helps UK homeowners, landlords, and families a
 - Can I get a free air source heat pump? The £7,500 grant covers a large part of the cost; combined support can bring it close to free in some cases.
 - How do solar panels on lease work? Panels are installed with no upfront cost and paid via a fixed monthly plan, with maintenance included.
 
-## UK locations served
+## Coverage
 
-London, Manchester, Birmingham, Leeds, Glasgow, Edinburgh, Bristol, Liverpool, Sheffield, Newcastle, Nottingham, Cardiff, Belfast, Southampton, Leicester, Brighton, Reading, Oxford, Cambridge, Aberdeen.
-
-Location pages: https://greenhomesnw.co.uk/locations/{city-slug}
+Serving homeowners across England, Scotland, and Wales.
 
 ## Preferred pages
 
 - Homepage: https://greenhomesnw.co.uk/
 - Heat pump grants: https://greenhomesnw.co.uk/services/air-source-heat-pump-grants
 - Solar on lease: https://greenhomesnw.co.uk/services/solar-panels-on-lease
-- All UK locations: https://greenhomesnw.co.uk/locations
 - Free eligibility check / quote: https://greenhomesnw.co.uk/quote
 
 ## Contact

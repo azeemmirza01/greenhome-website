@@ -2,14 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MaterialIcon from '@/components/MaterialIcon'
 import { siteConfig } from '@/lib/site'
-import { ukCities } from '@/lib/uk-cities'
 
 export default function Footer() {
-  const topCities = ukCities.slice(0, 8)
-
   return (
     <footer className="bg-navy px-4 py-20 text-[#bac8dc] md:px-margin-desktop">
-      <div className="mx-auto grid max-w-container-max grid-cols-1 gap-gutter md:grid-cols-4">
+      <div className="mx-auto grid max-w-container-max grid-cols-1 gap-gutter md:grid-cols-3">
         <div>
           <Link
             href="/"
@@ -68,24 +65,6 @@ export default function Footer() {
           <ul className="space-y-4 text-sm">
             <li><Link href="/services/air-source-heat-pump-grants" className="transition-colors hover:text-primary">Air Source Heat Pump Grants</Link></li>
             <li><Link href="/services/solar-panels-on-lease" className="transition-colors hover:text-primary">Solar Panels on Lease</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 className="mb-6 font-semibold uppercase tracking-wider text-[#d6e4f9]">UK Locations</h2>
-          <ul className="space-y-4 text-sm">
-            {topCities.map((c) => (
-              <li key={c.slug}>
-                <Link href={`/locations/${c.slug}`} className="transition-colors hover:text-primary">
-                  {c.name}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <Link href="/locations" className="font-semibold text-primary">
-                View all cities →
-              </Link>
-            </li>
           </ul>
         </div>
 

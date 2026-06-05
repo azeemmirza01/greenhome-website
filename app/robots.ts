@@ -11,7 +11,7 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: ['GPTBot', 'ChatGPT-User', 'ClaudeBot', 'PerplexityBot', 'Google-Extended'],
-        allow: ['/', '/llms.txt', '/locations'],
+        allow: ['/', '/llms.txt'],
       },
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,

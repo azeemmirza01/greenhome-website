@@ -1,5 +1,4 @@
 import { siteConfig } from '@/lib/site'
-import type { UkCity } from '@/lib/uk-cities'
 import { faqData } from '@/lib/faq-data'
 
 const orgId = `${siteConfig.url}/#organization`
@@ -75,49 +74,5 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
       name: item.name,
       item: item.url,
     })),
-  }
-}
-
-export function cityLocalBusinessSchema(city: UkCity) {
-  const pageUrl = `${siteConfig.url}/locations/${city.slug}`
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': `${pageUrl}#localbusiness`,
-    name: `${siteConfig.name} in ${city.name}`,
-    url: pageUrl,
-    telephone: siteConfig.phone,
-    email: siteConfig.email,
-    image: `${siteConfig.url}/images/hero.png`,
-    description: `Air source heat pump grants up to £7,500 and solar panels on lease in ${city.name}, ${city.region}. Typical savings around ${city.avgSavings} per year.`,
-    parentOrganization: { '@id': orgId },
-    areaServed: {
-      '@type': 'City',
-      name: city.name,
-      containedInPlace: { '@type': 'AdministrativeArea', name: city.region },
-    },
-    priceRange: '££',
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:00',
-    },
-  }
-}
-
-export function cityServiceSchema(city: UkCity) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: `Heat Pump Grants & Solar on Lease in ${city.name}, UK`,
-    provider: { '@id': orgId },
-    areaServed: {
-      '@type': 'City',
-      name: city.name,
-      containedInPlace: { '@type': 'AdministrativeArea', name: city.region },
-    },
-    description: city.intro,
-    serviceType: 'Air source heat pump grants and no upfront cost solar panel installation',
   }
 }
