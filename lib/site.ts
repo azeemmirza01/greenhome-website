@@ -11,7 +11,7 @@ export const siteConfig = {
   locale: 'en_GB',
   phone: '+44 7459 453743',
   phoneDisplay: '+44 7459 453743',
-  email: 'info@greenhomesne.co.uk',
+  email: 'info@greenhomesnw.co.uk',
   address: {
     street: 'Unit 17 South Cross Street',
     city: 'Bury',

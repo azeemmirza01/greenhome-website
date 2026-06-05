@@ -42,4 +42,4 @@ Location pages: https://greenhomesnw.co.uk/locations/{city-slug}
 
 ## Contact
 
-info@greenhomesne.co.uk | +44 7459 453743
+info@greenhomesnw.co.uk | +44 7459 453743
