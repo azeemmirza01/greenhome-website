@@ -138,8 +138,13 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
         <select
           id="service"
           name="service"
-          className="w-full rounded-lg border border-outline-variant/50 bg-surface-container-low px-4 py-3 focus:border-primary focus:outline-none"
+          required
+          defaultValue=""
+          className="w-full rounded-lg border border-outline-variant/50 bg-surface-container-low px-4 py-3 text-on-surface focus:border-primary focus:outline-none invalid:text-on-surface-variant"
         >
+          <option value="" disabled>
+            Select your services
+          </option>
           <option>Air source heat pump grant</option>
           <option>Solar panels on lease</option>
           <option>Both heat pump grant & solar</option>
