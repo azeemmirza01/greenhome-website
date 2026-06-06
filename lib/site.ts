@@ -1,3 +1,16 @@
+function resolveSiteUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '')
+  if (fromEnv) return fromEnv.startsWith('http') ? fromEnv : `https://${fromEnv}`
+
+  const production = process.env.VERCEL_PROJECT_PRODUCTION_URL?.replace(/\/$/, '')
+  if (production) return production.startsWith('http') ? production : `https://${production}`
+
+  const vercel = process.env.VERCEL_URL?.replace(/\/$/, '')
+  if (vercel) return `https://${vercel}`
+
+  return 'https://greenhomesnw.co.uk'
+}
+
 export const siteConfig = {
   name: 'GreenHomesNW',
   legalName: 'Green Homes NW Ltd',
@@ -7,9 +20,7 @@ export const siteConfig = {
   serviceArea: 'United Kingdom (England, Scotland & Wales)',
   financePartner: 'HTG Finance Limited',
   rating: '4.9',
-  url:
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://greenhomesnw.co.uk'),
+  url: resolveSiteUrl(),
   locale: 'en_GB',
   phone: '+44 7459 453743',
   phoneDisplay: '+44 7459 453743',
