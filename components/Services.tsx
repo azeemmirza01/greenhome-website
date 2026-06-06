@@ -14,7 +14,7 @@ const cards = [
   {
     id: 'heat-pump',
     icon: 'heat_pump',
-    title: 'Air Source Heat Pumps & the Boiler Upgrade Scheme',
+    title: 'Air Source Heat Pumps ',
     description:
       "Eligible UK homeowners may be able to access support for an air source heat pump through the Government's Boiler Upgrade Scheme (BUS). Check your eligibility to find out if you qualify.",
     cta: 'Check My Eligibility',
