@@ -28,6 +28,8 @@ export const siteConfig = {
   social: {
     linkedin: 'https://www.linkedin.com/company/greenhomesnw',
   },
+  logo: '/images/FooterLogoo.png',
+  ogImage: '/images/og-image.png',
 } as const
 
 export const services = [

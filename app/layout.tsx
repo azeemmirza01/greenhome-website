@@ -49,13 +49,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: [{ url: '/images/hero.png', width: 1200, height: 630, alt: 'UK home with rooftop solar panels' }],
+    images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: `${siteConfig.name} logo` }],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${siteConfig.name} | Solar with No Upfront Cost`,
     description: siteConfig.description,
-    images: ['/images/hero.png'],
+    images: [siteConfig.ogImage],
   },
   robots: {
     index: true,
