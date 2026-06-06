@@ -28,7 +28,7 @@ export default function Hero() {
           <span className="text-gradient">Homeowners Across the UK</span>
         </h1>
         <p className="mb-10 max-w-xl text-body-lg text-on-surface-variant">
-          We make it simple and affordable to switch to clean, green power and start saving on your energy bills. Our all-inclusive Solar Plan covers installation, monitoring, and maintenance with low or no upfront cost. You get a custom-designed solar PV and battery system, plus the benefits of the generated and stored energy, your bill savings, and export payments. We take care of the rest for the lifetime of your plan.
+          Switch to clean, green power and start cutting your energy bills, with no upfront cost. Our all-inclusive Solar Plan covers your custom solar PV and battery system, plus installation, monitoring, and maintenance for the lifetime of your plan. You keep the savings and export payments. We take care of the rest.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
           <Link
