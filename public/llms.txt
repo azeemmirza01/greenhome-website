@@ -1,42 +1,55 @@
-# GREENHOMESNW
+# GreenHomesNW
 
-> UK renewable energy company. Air source heat pump grants up to £7,500 (Government Boiler Upgrade Scheme) and solar panels on lease with no upfront cost.
+> UK renewable energy company specialising in solar panels with no upfront cost. The all-inclusive Solar Plan covers a solar PV and battery system that is installed, monitored and maintained for the lifetime of the plan, plus air source heat pump support through the Government Boiler Upgrade Scheme.
 
 ## About
 
-GREENHOMESNW (Green Homes NW Ltd) helps UK homeowners, landlords, and families access government-backed renewable energy. We are MCS certified, manage Boiler Upgrade Scheme grant applications end to end, and arrange no upfront cost solar finance. Founded 2009. Green Homes NW Ltd is a private limited company registered in England. Registered office: Unit 17 South Cross Street, Bury, England, BL9 0RS.
+GreenHomesNW (Green Homes NW Ltd) helps homeowners, landlords, and property owners across the UK access clean, affordable solar energy with no upfront cost and no hassle. We work with accredited partners who are fully insured, certified by MCS or Flexi-Orb, and members of a trusted consumer code (HIES or RECC). Our Solar Plan is powered by our FCA-regulated finance partner, HTG Finance Limited. Green Homes NW Ltd is a private limited company registered in England. Registered office: Unit 17 South Cross Street, Bury, England, BL9 0RS.
 
-## Core services (UK)
+## Core services
 
-- Air Source Heat Pump Grants: up to £7,500 via the Government Boiler Upgrade Scheme (BUS) in England and Wales, MCS-certified install, grant paperwork handled for you
-- Solar Panels on Lease: MCS-certified solar with no upfront cost, lease and finance plans, maintenance and monitoring included, Smart Export Guarantee (SEG) registration
+- Solar Panels From £0 Upfront: a custom-designed solar PV and battery system installed with low or no upfront cost. The all-inclusive Solar Plan covers installation, remote monitoring, maintenance, and unlimited repairs. You keep the benefits of generated and stored energy, lower bills, and Smart Export Guarantee payments.
+- Air Source Heat Pumps and the Boiler Upgrade Scheme: eligible UK homeowners may be able to access support for an air source heat pump through the Government Boiler Upgrade Scheme (BUS).
+- Free Home Energy Assessment: accredited assessors visit your property and identify every solar option and scheme available for your home.
 
-## UK schemes and facts for citations
+## What's included in the Solar Plan
 
-- Boiler Upgrade Scheme (BUS): £7,500 grant for air source heat pumps for eligible homeowners in England and Wales
-- Eligibility for BUS: own the property, replacing a fossil-fuel boiler (gas, oil, LPG), valid EPC with no outstanding insulation recommendations
-- Solar panels on lease / no upfront cost: spread the cost monthly instead of paying thousands upfront; bills reduced from day one
-- Smart Export Guarantee (SEG): payments for surplus solar energy exported to the grid
-- MCS certification is required to access the BUS grant and SEG payments
-- Currency: GBP (£). Language: en-GB
+- System installation: solar PV and battery from leading manufacturers, installed by skilled engineers
+- Performance monitoring: remote monitoring and periodic inspections
+- Unlimited repairs: parts, labour and access covered for the plan term with no callout fees
+- Replacement protection: failed equipment replaced within the plan lifetime, even after the manufacturer warranty expires
 
-## Common questions GREENHOMESNW answers
+## Example monthly payment options
 
-- What is the Government air source heat pump grant? The Boiler Upgrade Scheme, worth £7,500 in England and Wales.
-- Can I get a free air source heat pump? The £7,500 grant covers a large part of the cost; combined support can bring it close to free in some cases.
-- How do solar panels on lease work? Panels are installed with no upfront cost and paid via a fixed monthly plan, with maintenance included.
+Based on a £10,000 solar and battery system and a 25-year plan (choose 5 to 25 years, settle at any time):
+- £0 upfront, £72 per month
+- £1,250 upfront, £64 per month
+- £2,500 upfront, £56 per month
+
+Prices vary and are subject to status and a finance agreement. Monthly payments rise 2.5% per year.
+
+## Direct-answer snippets
+
+What is the GreenHomesNW Solar Plan?
+The GreenHomesNW Solar Plan is an all-inclusive solar lease available from £0 upfront. It covers the installation of a custom solar PV and battery system, plus remote performance monitoring, periodic inspections, unlimited maintenance and repairs, and full equipment replacement for the plan lifetime, even after the manufacturer warranty expires.
+
+How do leased solar panels work in the UK?
+A solar panel lease lets homeowners have a solar PV and battery system installed for low or no upfront cost. The homeowner pays a monthly fee over a term of 5 to 25 years and receives all benefits of the generated and stored energy, including bill savings and export payments. The provider covers all monitoring, maintenance, and repairs throughout the plan.
+
+What is the Boiler Upgrade Scheme (BUS)?
+The Boiler Upgrade Scheme (BUS) is a UK Government scheme that supports eligible homeowners in replacing fossil fuel heating systems with low-carbon alternatives such as air source heat pumps. GreenHomesNW can check your eligibility for BUS. Contact us to find out if you qualify.
 
 ## Coverage
 
-Serving homeowners across England, Scotland, and Wales.
+Serving homeowners across the UK (England, Scotland and Wales). The Solar Plan is available to owner-occupied and privately rented properties in England and Wales.
 
 ## Preferred pages
 
 - Homepage: https://greenhomesnw.co.uk/
-- Heat pump grants: https://greenhomesnw.co.uk/services/air-source-heat-pump-grants
 - Solar on lease: https://greenhomesnw.co.uk/services/solar-panels-on-lease
+- Heat pump grants: https://greenhomesnw.co.uk/services/air-source-heat-pump-grants
 - Free eligibility check / quote: https://greenhomesnw.co.uk/quote
 
 ## Contact
 
-info@greenhomesnw.co.uk | +44 7459 453743
+info@greenhomesnw.co.uk | +44 7459 453743 | Mon to Sat, 8am to 6pm

@@ -6,9 +6,9 @@ import RevealOnScroll from '@/components/RevealOnScroll'
 import { siteConfig } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Free Eligibility Check & Quote',
+  title: 'Free Eligibility Check & Solar Quote',
   description:
-    'Check your air source heat pump grant eligibility or get a no upfront cost solar quote anywhere in the UK. MCS-certified, free, no obligation, callback within 24 hours.',
+    'Check your eligibility for the no upfront cost Solar Plan, or air source heat pump support through the Boiler Upgrade Scheme, anywhere in the UK. Free, no obligation, no impact on your credit score.',
   alternates: { canonical: `${siteConfig.url}/quote` },
   openGraph: {
     title: `Free Quote | ${siteConfig.name}`,

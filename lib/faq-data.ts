@@ -1,42 +1,50 @@
 export const faqData = [
   {
-    q: 'What is the Government air source heat pump grant in the UK?',
-    a: 'The Government air source heat pump grant is the Boiler Upgrade Scheme (BUS), which gives eligible homeowners in England and Wales £7,500 towards a new air source heat pump. The grant is paid through an MCS-certified installer like GREENHOMESNW, who applies on your behalf so it comes straight off your installation price.',
+    q: 'Who is the Solar Plan for?',
+    a: 'Homeowners installing solar PV and battery systems in owner-occupied or privately rented properties in England and Wales.',
   },
   {
-    q: 'Can I get a free air source heat pump in the UK?',
-    a: 'A £7,500 Boiler Upgrade Scheme grant covers a large part of the cost of an air source heat pump, and in some cases combining it with other support can bring the price close to zero. Whether your heat pump is effectively free depends on your property, your old heating system, and the quote, so we give you exact figures after a free eligibility check.',
+    q: 'How long is the plan term?',
+    a: 'You can choose from 5 to 25 years before signing your agreement. In some cases the £0 upfront option may not be available.',
   },
   {
-    q: 'Am I eligible for the Boiler Upgrade Scheme?',
-    a: 'You are usually eligible for the Boiler Upgrade Scheme if you own a home in England or Wales, are replacing a fossil-fuel system such as a gas, oil, or LPG boiler, and have a valid EPC with no outstanding insulation recommendations. We confirm your eligibility for free in minutes before you commit to anything.',
+    q: 'How much can I pay upfront?',
+    a: 'We offer three upfront payment options: £0 and two larger amounts, up to 25% of your system installation value. This will be taken by direct debit alongside your first monthly payment, a few days after installation.',
   },
   {
-    q: 'How do solar panels on lease work?',
-    a: 'Solar panels on lease let you have MCS-certified panels installed with no upfront cost, then pay through a fixed monthly plan instead of one large payment. You use the clean electricity your panels generate to cut your bills from day one, while maintenance and monitoring are included for the length of your plan.',
+    q: 'How do I apply?',
+    a: 'Your installer will send you a personal link to apply alongside their quote. Our secure online application only takes a few minutes, won’t impact your credit score, and provides instant decisions in most cases. There’s no obligation to proceed once you’ve been approved.',
   },
   {
-    q: 'Are no upfront cost solar panels worth it?',
-    a: 'No upfront cost solar panels are worth it for most UK homeowners who want to reduce energy bills without spending thousands in advance. You benefit from lower electricity costs and Smart Export Guarantee payments immediately, while spreading the investment over affordable monthly payments with maintenance covered.',
+    q: 'What equipment will I get?',
+    a: 'Our plans are available across a range of leading manufacturers. Your installer will design an appropriate system, tailored to your property and energy usage.',
   },
   {
-    q: 'How much can I save on my energy bills?',
-    a: 'A typical UK home can save several hundred pounds a year on electricity with solar panels, plus extra income from Smart Export Guarantee payments. Replacing an old boiler with an air source heat pump can lower heating bills further, especially compared with oil or LPG. We give you a personalised savings estimate after a free survey.',
+    q: 'How soon can my system be installed?',
+    a: 'Lead times depend on your chosen installer’s availability, so it’s best to check with them.',
   },
   {
-    q: 'Is the solar lease a loan, and is there APR?',
-    a: 'The Solar Plan is a lease, not a loan, so there is no APR and you are not paying down a borrowed sum plus interest. Your fixed monthly payments give you full use of the system, including all the generation, storage, bill savings, and export payments, plus monitoring, maintenance, and unlimited repairs for the life of the plan.',
+    q: 'Who will install and maintain the system?',
+    a: 'Our nationwide network of accredited partners install quality systems and maintain them with care. They’ll be friendly, punctual and tidy when working at your property, and we’ll check in with you afterwards. On the rare occasion that they’re unavailable, we’ll arrange an alternative through our network.',
   },
   {
-    q: 'What happens to my solar lease if I move house?',
-    a: 'You can end your solar lease at any time by paying the settlement amount set out in your agreement, with no early-exit penalty. If you sell your home, you can settle before marketing the property or from the sale proceeds, or the buyer can apply to take over the plan for the remaining term.',
+    q: 'What’s the APR?',
+    a: 'As the Solar Plan is a lease, not a loan, you’re not paying down a borrowed sum plus interest. Your payments give you full use of the system, including all the benefits of the generation, storage, bill savings and export payments, plus our remote monitoring service, periodic inspections, and unlimited repairs and replacement for the plan lifetime.',
   },
   {
-    q: 'Is GREENHOMESNW MCS certified?',
-    a: 'Yes, GREENHOMESNW installations are carried out by MCS-certified engineers. MCS certification is required to access the Boiler Upgrade Scheme grant and Smart Export Guarantee payments, and it is your assurance that the work meets recognised UK quality and safety standards.',
+    q: 'What if I move house?',
+    a: 'You can end your plan at any time by paying the settlement amount outlined in your agreement. If you’re selling your home, you can settle before marketing your property, or through your solicitor from the sale completion funds. Alternatively the buyer of your property can apply to take over the plan for the remaining term.',
   },
   {
-    q: 'Which areas of the UK do you cover?',
-    a: 'We help homeowners across England, Scotland, and Wales, with teams serving major cities and the surrounding areas. Enter your UK postcode on our quote form and we will confirm availability and the grants or finance options that apply to your home.',
+    q: 'How much is the settlement amount?',
+    a: 'In your agreement you’ll find a table showing the settlement amount due in each year of your term. This will never be more than the system installation value minus any upfront payment, and it doesn’t include any surcharge for ending your plan early.',
+  },
+  {
+    q: 'What happens at the end of the plan?',
+    a: 'If you choose to upgrade your system we’ll set you up with a new Solar Plan. Otherwise your plan will automatically end. Our monitoring and maintenance service will end and no further payments will be due. We will only remove the equipment from your home if you ask us to.',
+  },
+  {
+    q: 'Does GreenHomesNW help with air source heat pumps?',
+    a: 'Yes. Eligible homeowners may be able to access support for an air source heat pump through the Government’s Boiler Upgrade Scheme (BUS). Check your eligibility to find out if you qualify.',
   },
 ] as const

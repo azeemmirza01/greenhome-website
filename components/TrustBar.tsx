@@ -1,11 +1,11 @@
 import MaterialIcon from '@/components/MaterialIcon'
 
 const signals = [
-  { icon: 'verified', label: 'MCS Certified Installer' },
-  { icon: 'account_balance', label: 'Boiler Upgrade Scheme Approved' },
-  { icon: 'savings', label: 'Grants up to £7,500' },
-  { icon: 'credit_score', label: 'No Upfront Cost Options' },
-  { icon: 'handshake', label: 'Rated Excellent by UK Homeowners' },
+  { icon: 'verified', label: 'MCS & Flexi-Orb Accredited' },
+  { icon: 'shield', label: 'HIES / RECC Consumer Code' },
+  { icon: 'account_balance', label: 'FCA-Regulated Finance' },
+  { icon: 'credit_score', label: 'Solar Plans from £0 Upfront' },
+  { icon: 'star', label: 'Rated 4.9 / 5 by Verified Customers' },
 ]
 
 export default function TrustBar() {

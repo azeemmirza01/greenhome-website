@@ -7,9 +7,10 @@ import { siteConfig } from '@/lib/site'
 
 const links = [
   { href: '/#services', label: 'Services' },
+  { href: '/#how-it-works', label: 'How It Works' },
+  { href: '/#payment-options', label: 'Payments' },
   { href: '/#about', label: 'About' },
-  { href: '/#features', label: 'Features' },
-  { href: '/#testimonials', label: 'Testimonials' },
+  { href: '/#faq', label: 'FAQ' },
 ]
 
 export default function Nav() {

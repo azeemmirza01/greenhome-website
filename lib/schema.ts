@@ -30,8 +30,8 @@ export function organizationSchema() {
     sameAs: [siteConfig.social.linkedin],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'UK Renewable Energy Services',
-      itemListElement: ['Air Source Heat Pump Grants', 'Solar Panels on Lease'].map((name) => ({
+      name: 'Renewable Energy Services',
+      itemListElement: ['Solar Panels on Lease', 'Air Source Heat Pump Grants'].map((name) => ({
         '@type': 'Offer',
         itemOffered: { '@type': 'Service', name, provider: { '@id': orgId } },
       })),
