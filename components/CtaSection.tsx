@@ -27,10 +27,12 @@ export default function CtaSection() {
             Check My Eligibility Now, It’s Free
           </Link>
           <a
-            href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
+            href={siteConfig.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-surface-container-lowest px-10 py-5 text-lg font-semibold text-on-surface transition-all hover:scale-105 hover:bg-surface-container-low active:scale-95"
           >
-            Call {siteConfig.phoneDisplay}
+            Call
           </a>
         </div>
         <p className="mt-6 text-sm text-on-primary-fixed-variant">

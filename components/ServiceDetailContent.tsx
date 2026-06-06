@@ -131,8 +131,17 @@ export default function ServiceDetailContent({ service }: Props) {
         </Link>
       </div>
 
-      <p className="reveal mt-10 text-sm text-on-surface-variant active">
-        Questions? Call {siteConfig.phoneDisplay} or email{' '}
+      <p className="reveal mt-10 flex flex-wrap items-center gap-2 text-sm text-on-surface-variant active">
+        <span>Questions?</span>
+        <a
+          href={siteConfig.whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 rounded-full border border-primary px-4 py-1.5 font-semibold text-primary transition-colors hover:bg-primary hover:text-on-primary"
+        >
+          Call
+        </a>
+        <span>or email</span>
         <a href={`mailto:${siteConfig.email}`} className="font-semibold text-primary hover:underline">
           {siteConfig.email}
         </a>

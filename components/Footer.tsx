@@ -32,8 +32,9 @@ export default function Footer() {
             </span> */}
           </Link>
           <p className="mb-6 text-sm leading-relaxed opacity-80">
-            Government-backed air source heat pump grants up to £7,500 and solar panels on lease with no upfront cost.
-            MCS-certified renewable energy for homeowners across England, Scotland, and Wales.
+            Switch to clean, green power and cut your energy bills with no upfront cost. Our all-inclusive Solar Plan
+            covers your PV and battery system, installation, monitoring, and maintenance, so you keep the savings and
+            we handle the rest.
           </p>
           <div className="flex gap-4">
             <a
@@ -51,9 +52,11 @@ export default function Footer() {
               <MaterialIcon name="mail" className="text-sm transition-transform group-hover:scale-110" />
             </a>
             <a
-              href={`tel:${siteConfig.phone.replace(/\s/g, '')}`}
+              href={siteConfig.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 transition-colors hover:bg-primary"
-              aria-label="Phone"
+              aria-label="Call on WhatsApp"
             >
               <MaterialIcon name="call" className="text-sm transition-transform group-hover:scale-110" />
             </a>
@@ -63,8 +66,8 @@ export default function Footer() {
         <div>
           <h2 className="mb-6 font-semibold uppercase tracking-wider text-[#d6e4f9]">Services</h2>
           <ul className="space-y-4 text-sm">
-            <li><Link href="/services/air-source-heat-pump-grants" className="transition-colors hover:text-primary">Air Source Heat Pump Grants</Link></li>
             <li><Link href="/services/solar-panels-on-lease" className="transition-colors hover:text-primary">Solar Panels on Lease</Link></li>
+            <li><Link href="/services/air-source-heat-pump-grants" className="transition-colors hover:text-primary">Air Source Heat Pump Grants</Link></li>
           </ul>
         </div>
 
@@ -77,9 +80,7 @@ export default function Footer() {
             </li>
             <li className="flex gap-2">
               <MaterialIcon name="phone" className="text-sm" />
-              <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} className="transition-colors hover:text-primary">
-                {siteConfig.phoneDisplay}
-              </a>
+              <span>{siteConfig.phoneDisplay}</span>
             </li>
             <li className="flex gap-2">
               <MaterialIcon name="mail" className="text-sm" />

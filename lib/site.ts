@@ -22,8 +22,9 @@ export const siteConfig = {
   rating: '4.9',
   url: resolveSiteUrl(),
   locale: 'en_GB',
-  phone: '+44 7459 453743',
-  phoneDisplay: '+44 7459 453743',
+  phone: '+447459453743',
+  phoneDisplay: '07459 453743',
+  whatsappUrl: 'https://wa.me/447459453743',
   email: 'info@greenhomesnw.co.uk',
   address: {
     street: 'Unit 17 South Cross Street',
