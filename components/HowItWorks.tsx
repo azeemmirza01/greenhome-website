@@ -5,14 +5,14 @@ const steps = [
     num: '01',
     title: 'Design',
     detail:
-      'Your installer will survey your property and design a system to suit your home and energy needs. They’ll provide detailed equipment specifications and energy-saving forecasts.',
+      'Our installers will survey your property and design a system to suit your home and energy needs. They’ll provide detailed equipment specifications and energy-saving forecasts.',
     tags: [] as string[],
   },
   {
     num: '02',
     title: 'Apply',
     detail:
-      'Alongside their quote, your installer will send a personal link to apply for the Solar Plan. Complete our application, choose your plan, then you’re ready to sign our online agreement.',
+      'Alongside their quote, Our installers will send a personal link to apply for the Solar Plan. Complete our application, choose your plan, then you’re ready to sign our online agreement.',
     tags: ['Secure online application', 'Instant decisions', 'Won’t impact credit score', '14-day cooling off'],
   },
   {

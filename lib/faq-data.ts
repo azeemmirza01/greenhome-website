@@ -13,11 +13,11 @@ export const faqData = [
   },
   {
     q: 'How do I apply?',
-    a: 'Your installer will send you a personal link to apply alongside their quote. Our secure online application only takes a few minutes, won’t impact your credit score, and provides instant decisions in most cases. There’s no obligation to proceed once you’ve been approved.',
+    a: 'Our installers will send you a personal link to apply alongside their quote. Our secure online application only takes a few minutes, won’t impact your credit score, and provides instant decisions in most cases. There’s no obligation to proceed once you’ve been approved.',
   },
   {
     q: 'What equipment will I get?',
-    a: 'Our plans are available across a range of leading manufacturers. Your installer will design an appropriate system, tailored to your property and energy usage.',
+    a: 'Our plans are available across a range of leading manufacturers. Our installers will design an appropriate system, tailored to your property and energy usage.',
   },
   {
     q: 'How soon can my system be installed?',
