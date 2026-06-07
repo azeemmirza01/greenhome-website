@@ -15,7 +15,9 @@ After build, upload everything inside the **`out/`** folder to Hostinger `public
 1. Run `npm run build`
 2. Open Hostinger **File Manager** → `public_html`
 3. Upload **all files and folders inside `out/`** (not the `out` folder itself)
-4. Confirm `.htaccess` is in `public_html` (enables clean URLs like `/quote/` and redirects old `.html` links)
+4. **`.htaccess` is required** for clean URLs (`/quote/`). It is a hidden file (starts with `.`).
+   - In Hostinger File Manager, enable **Show hidden files**, or
+   - Upload `htaccess.txt` from `out/` and **rename it to `.htaccess`** in `public_html`
 5. Test: `https://yourdomain.com/quote/` and `https://yourdomain.com/services/solar-panels-on-lease/`
 6. Done — no Node.js or zip needed
 
