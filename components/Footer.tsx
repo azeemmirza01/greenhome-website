@@ -38,13 +38,6 @@ export default function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href={siteConfig.social.linkedin}
-              className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 transition-colors hover:bg-primary"
-              aria-label="LinkedIn"
-            >
-              <MaterialIcon name="public" className="text-sm transition-transform group-hover:scale-110" />
-            </a>
-            <a
               href={`mailto:${siteConfig.email}`}
               className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 transition-colors hover:bg-primary"
               aria-label="Email"
