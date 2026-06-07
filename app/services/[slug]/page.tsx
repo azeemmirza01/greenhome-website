@@ -9,7 +9,7 @@ import ServiceDetailContent from '@/components/ServiceDetailContent'
 import { breadcrumbSchema, serviceSchema, webPageSchema } from '@/lib/schema'
 import { createPageMetadata } from '@/lib/seo'
 import { getAllServiceSlugs, getServiceBySlug } from '@/lib/service-details'
-import { siteConfig } from '@/lib/site'
+import { siteConfig, toPageUrl } from '@/lib/site'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -35,14 +35,14 @@ export default async function ServicePage({ params }: Props) {
   const service = getServiceBySlug(slug)
   if (!service) notFound()
 
-  const pageUrl = `${siteConfig.url}/services/${service.slug}`
+  const pageUrl = toPageUrl(`/services/${service.slug}`)
 
   return (
     <>
       <JsonLd
         data={[
           breadcrumbSchema([
-            { name: 'Home', url: siteConfig.url },
+            { name: 'Home', url: toPageUrl('/') },
             { name: 'Services', url: `${siteConfig.url}/#services` },
             { name: service.title, url: pageUrl },
           ]),

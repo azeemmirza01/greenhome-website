@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { siteConfig } from '@/lib/site'
+import { siteConfig, toPageUrl } from '@/lib/site'
 
 type PageMeta = {
   title: string
@@ -23,7 +23,7 @@ export function createPageMetadata({
   ogTitle,
   keywords,
 }: PageMeta): Metadata {
-  const url = `${siteConfig.url}${path}`
+  const url = toPageUrl(path)
 
   return {
     title,

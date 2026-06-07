@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import JsonLd from '@/components/JsonLd'
 import { organizationSchema, websiteSchema } from '@/lib/schema'
-import { siteConfig } from '@/lib/site'
+import { siteConfig, toPageUrl } from '@/lib/site'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: siteConfig.url,
-    languages: { 'en-GB': siteConfig.url },
+    canonical: toPageUrl('/'),
+    languages: { 'en-GB': toPageUrl('/') },
   },
   applicationName: siteConfig.name,
   formatDetection: { telephone: false, email: false, address: false },

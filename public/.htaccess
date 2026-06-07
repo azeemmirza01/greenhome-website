@@ -1,0 +1,16 @@
+# Hostinger (Apache): clean URLs for Next.js static export (trailingSlash)
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# 301: legacy .html URLs -> canonical trailing-slash URLs
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1/ [R=301,L]
+
+# 301: add trailing slash for pages (not files like .xml, .txt, .png)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
+RewriteRule ^(.*)$ $1/ [R=301,L]
+
+ErrorDocument 404 /404.html

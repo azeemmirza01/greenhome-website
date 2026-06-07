@@ -1,4 +1,4 @@
-import { siteConfig } from '@/lib/site'
+import { siteConfig, toPageUrl } from '@/lib/site'
 import { faqData } from '@/lib/faq-data'
 import type { ServiceDetail } from '@/lib/service-details'
 
@@ -80,7 +80,7 @@ export function websiteSchema() {
     publisher: { '@id': orgId },
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${siteConfig.url}/quote`,
+      target: toPageUrl('/quote'),
       name: 'Check eligibility for solar panels',
     },
   }
@@ -95,7 +95,7 @@ export function webPageSchema({
   description: string
   path: string
 }) {
-  const url = `${siteConfig.url}${path}`
+  const url = toPageUrl(path)
   return {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -137,7 +137,7 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
 }
 
 export function serviceSchema(service: ServiceDetail) {
-  const pageUrl = `${siteConfig.url}/services/${service.slug}`
+  const pageUrl = toPageUrl(`/services/${service.slug}`)
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -153,7 +153,7 @@ export function serviceSchema(service: ServiceDetail) {
       '@type': 'Offer',
       priceCurrency: 'GBP',
       availability: 'https://schema.org/InStock',
-      url: `${siteConfig.url}/quote`,
+      url: toPageUrl('/quote'),
     },
   }
 }
