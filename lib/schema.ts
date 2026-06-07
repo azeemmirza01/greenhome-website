@@ -1,5 +1,6 @@
 import { siteConfig } from '@/lib/site'
 import { faqData } from '@/lib/faq-data'
+import type { ServiceDetail } from '@/lib/service-details'
 
 const orgId = `${siteConfig.url}/#organization`
 
@@ -28,6 +29,34 @@ export function organizationSchema() {
     },
     areaServed: { '@type': 'Country', name: 'United Kingdom' },
     sameAs: [siteConfig.social.linkedin],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: siteConfig.phone,
+      email: siteConfig.email,
+      contactType: 'customer service',
+      areaServed: 'GB',
+      availableLanguage: 'English',
+      hoursAvailable: siteConfig.hours,
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '08:00',
+      closes: '18:00',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: siteConfig.rating,
+      bestRating: '5',
+      ratingCount: '4',
+    },
+    knowsAbout: [
+      'Solar panels on lease',
+      'Air source heat pump grants',
+      'Boiler Upgrade Scheme',
+      'Smart Export Guarantee',
+      'MCS certified installation',
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Renewable Energy Services',
@@ -49,6 +78,35 @@ export function websiteSchema() {
     description: siteConfig.description,
     inLanguage: 'en-GB',
     publisher: { '@id': orgId },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${siteConfig.url}/quote`,
+      name: 'Check eligibility for solar panels',
+    },
+  }
+}
+
+export function webPageSchema({
+  name,
+  description,
+  path,
+}: {
+  name: string
+  description: string
+  path: string
+}) {
+  const url = `${siteConfig.url}${path}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${url}#webpage`,
+    url,
+    name,
+    description,
+    inLanguage: 'en-GB',
+    isPartOf: { '@id': `${siteConfig.url}/#website` },
+    about: { '@id': orgId },
+    publisher: { '@id': orgId },
   }
 }
 
@@ -56,6 +114,7 @@ export function faqPageSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    '@id': `${siteConfig.url}/#faq`,
     mainEntity: faqData.map(({ q, a }) => ({
       '@type': 'Question',
       name: q,
@@ -74,5 +133,27 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
       name: item.name,
       item: item.url,
     })),
+  }
+}
+
+export function serviceSchema(service: ServiceDetail) {
+  const pageUrl = `${siteConfig.url}/services/${service.slug}`
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${pageUrl}#service`,
+    name: service.title,
+    description: service.metaDescription,
+    url: pageUrl,
+    serviceType: service.title,
+    category: 'Renewable Energy',
+    provider: { '@id': orgId },
+    areaServed: { '@type': 'Country', name: 'United Kingdom' },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'GBP',
+      availability: 'https://schema.org/InStock',
+      url: `${siteConfig.url}/quote`,
+    },
   }
 }

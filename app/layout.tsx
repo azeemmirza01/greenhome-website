@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import JsonLd from '@/components/JsonLd'
-import { faqPageSchema, organizationSchema, websiteSchema } from '@/lib/schema'
+import { organizationSchema, websiteSchema } from '@/lib/schema'
 import { siteConfig } from '@/lib/site'
 
 const inter = Inter({
@@ -68,7 +68,12 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-  alternates: { canonical: siteConfig.url },
+  alternates: {
+    canonical: siteConfig.url,
+    languages: { 'en-GB': siteConfig.url },
+  },
+  applicationName: siteConfig.name,
+  formatDetection: { telephone: false, email: false, address: false },
   icons: {
     icon: [
       { url: siteConfig.logo, sizes: 'any', type: 'image/png' },
@@ -86,17 +91,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB" className={inter.variable}>
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-        />
         <meta name="geo.region" content="GB-BUR" />
         <meta name="geo.placename" content="Bury, England" />
         <meta name="ICBM" content="53.5933, -2.2966" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site summary" />
       </head>
       <body className="font-sans">
-        <JsonLd data={[organizationSchema(), websiteSchema(), faqPageSchema()]} />
+        <JsonLd data={[organizationSchema(), websiteSchema()]} />
         {children}
       </body>
     </html>

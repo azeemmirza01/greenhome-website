@@ -5,6 +5,9 @@ node_modules/
 .env*.local
 out/
 dist/
+build/
+hostinger-deploy/
+build.zip
 *.log
 .DS_Store
 design-source/

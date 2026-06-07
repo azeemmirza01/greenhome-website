@@ -60,7 +60,7 @@ export default function Guarantees() {
             </div>
             <div>
               <h3 className="mb-2 text-headline-md">{g.title}</h3>
-              <p className="text-body-md text-on-surface-variant">{g.detail}</p>
+              <p className="card-text text-body-md text-on-surface-variant">{g.detail}</p>
             </div>
           </div>
         ))}

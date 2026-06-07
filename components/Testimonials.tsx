@@ -75,7 +75,7 @@ export default function Testimonials() {
                   <MaterialIcon key={i} name="star" filled className="text-tertiary" />
                 ))}
               </div>
-              <p className="mb-8 text-body-lg italic">&ldquo;{t.quote}&rdquo;</p>
+              <p className="card-text mb-8 text-body-lg italic">&ldquo;{t.quote}&rdquo;</p>
               <footer>
                 <p className="font-semibold">{t.name}</p>
                 <p className="text-sm text-on-surface-variant">{t.location}</p>

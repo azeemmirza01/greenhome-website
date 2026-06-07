@@ -51,7 +51,7 @@ export default function HowItWorks() {
             >
               <span className="mb-4 text-display-sm font-bold text-primary/30">{s.num}</span>
               <h3 className="mb-3 text-headline-md">{s.title}</h3>
-              <p className="text-body-md text-on-surface-variant">{s.detail}</p>
+              <p className="card-text text-body-md text-on-surface-variant">{s.detail}</p>
               {s.tags.length > 0 && (
                 <ul className="mt-5 space-y-2">
                   {s.tags.map((t) => (

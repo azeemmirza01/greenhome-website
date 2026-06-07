@@ -6,7 +6,8 @@ import JsonLd from '@/components/JsonLd'
 import Nav from '@/components/Nav'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import ServiceDetailContent from '@/components/ServiceDetailContent'
-import { breadcrumbSchema } from '@/lib/schema'
+import { breadcrumbSchema, serviceSchema, webPageSchema } from '@/lib/schema'
+import { createPageMetadata } from '@/lib/seo'
 import { getAllServiceSlugs, getServiceBySlug } from '@/lib/service-details'
 import { siteConfig } from '@/lib/site'
 
@@ -21,21 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getServiceBySlug(slug)
   if (!service) return {}
 
-  return {
+  return createPageMetadata({
     title: service.title,
     description: service.metaDescription,
-    alternates: { canonical: `${siteConfig.url}/services/${service.slug}` },
-    openGraph: {
-      title: `${service.title} | ${siteConfig.name}`,
-      description: service.metaDescription,
-      url: `${siteConfig.url}/services/${service.slug}`,
-      images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: `${siteConfig.name} logo` }],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      images: [siteConfig.ogImage],
-    },
-  }
+    path: `/services/${service.slug}`,
+    keywords: [service.title, 'UK', 'GreenHomesNW', 'renewable energy'],
+  })
 }
 
 export default async function ServicePage({ params }: Props) {
@@ -44,16 +36,6 @@ export default async function ServicePage({ params }: Props) {
   if (!service) notFound()
 
   const pageUrl = `${siteConfig.url}/services/${service.slug}`
-
-  const serviceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: service.title,
-    provider: { '@id': `${siteConfig.url}/#organization` },
-    areaServed: { '@type': 'Country', name: 'United Kingdom' },
-    description: service.metaDescription,
-    url: pageUrl,
-  }
 
   return (
     <>
@@ -64,11 +46,16 @@ export default async function ServicePage({ params }: Props) {
             { name: 'Services', url: `${siteConfig.url}/#services` },
             { name: service.title, url: pageUrl },
           ]),
-          serviceSchema,
+          webPageSchema({
+            name: service.title,
+            description: service.metaDescription,
+            path: `/services/${service.slug}`,
+          }),
+          serviceSchema(service),
         ]}
       />
       <Nav />
-      <main className="min-h-screen bg-surface pt-28 pb-24">
+      <main className="min-h-screen bg-surface pt-[var(--nav-height)] pb-24">
         <header className="reveal mx-auto mb-12 max-w-3xl px-4 text-center active md:px-margin-desktop">
           <nav aria-label="Breadcrumb" className="mb-6 text-sm text-on-surface-variant">
             <Link href="/" className="hover:text-primary">

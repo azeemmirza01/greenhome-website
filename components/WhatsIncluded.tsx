@@ -41,7 +41,7 @@ export default function WhatsIncluded() {
           >
             <MaterialIcon name={f.icon} className="mb-5 text-4xl text-primary" />
             <h3 className="mb-3 text-headline-md">{f.title}</h3>
-            <p className="text-body-md text-on-surface-variant">{f.text}</p>
+            <p className="card-text text-body-md text-on-surface-variant">{f.text}</p>
           </div>
         ))}
       </div>

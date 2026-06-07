@@ -2,13 +2,17 @@
 
 import { useState } from 'react'
 import MaterialIcon from '@/components/MaterialIcon'
+import { siteConfig } from '@/lib/site'
 
 type Props = {
   city?: string
   defaultPostcode?: string
+  hideTitle?: boolean
 }
 
-export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
+const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+
+export default function LeadQuoteForm({ city, defaultPostcode = '', hideTitle = false }: Props) {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -21,26 +25,49 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
 
     const formEl = e.currentTarget
     const form = new FormData(formEl)
-    const payload = {
-      name: String(form.get('name') ?? ''),
-      email: String(form.get('email') ?? ''),
-      phone: String(form.get('phone') ?? ''),
-      postcode: String(form.get('postcode') ?? ''),
-      service: String(form.get('service') ?? ''),
-      message: String(form.get('message') ?? ''),
-      company: String(form.get('company') ?? ''),
-      city: city ?? '',
+    const name = String(form.get('name') ?? '').trim()
+    const email = String(form.get('email') ?? '').trim()
+    const phone = String(form.get('phone') ?? '').trim()
+    const company = String(form.get('company') ?? '').trim()
+
+    if (company) {
+      setSubmitted(true)
+      return
     }
 
+    if (!accessKey) {
+      setError('Form is not configured yet. Please call us or email instead.')
+      setLoading(false)
+      return
+    }
+
+    const lines = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${phone}`,
+      `Postcode: ${String(form.get('postcode') ?? '').trim() || 'Not provided'}`,
+      `Service interest: ${String(form.get('service') ?? '').trim() || 'Not provided'}`,
+      city ? `Location: ${city}` : null,
+      '',
+      'Additional details:',
+      String(form.get('message') ?? '').trim() || '(none)',
+    ].filter(Boolean)
+
     try {
-      const res = await fetch('/api/quote', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `New quote enquiry from ${name}`,
+          from_name: `${siteConfig.name} website`,
+          replyto: email,
+          message: lines.join('\n'),
+        }),
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok || !data?.success) {
-        throw new Error(data?.message || 'Something went wrong. Please try again.')
+        throw new Error('Could not send your enquiry. Please try again or call us.')
       }
       setSubmitted(true)
     } catch (err) {
@@ -66,14 +93,16 @@ export default function LeadQuoteForm({ city, defaultPostcode = '' }: Props) {
       onSubmit={handleSubmit}
       aria-label="Request a free quote"
     >
-      <div className="mb-8">
-        <h2 className="text-headline-lg">Check Your Eligibility</h2>
-        {city && (
-          <p className="mt-2 text-on-surface-variant">
-            Heat pump grants and no upfront cost solar in <strong>{city}</strong>, UK
-          </p>
-        )}
-      </div>
+      {!hideTitle && (
+        <div className="mb-8">
+          <h2 className="text-headline-lg">Check Your Eligibility</h2>
+          {city && (
+            <p className="mt-2 text-on-surface-variant">
+              Heat pump grants and no upfront cost solar in <strong>{city}</strong>, UK
+            </p>
+          )}
+        </div>
+      )}
 
       <div className="grid gap-6 md:grid-cols-2">
         <div>

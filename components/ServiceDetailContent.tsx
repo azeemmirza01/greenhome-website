@@ -14,7 +14,7 @@ export default function ServiceDetailContent({ service }: Props) {
         </div>
       </div>
 
-      <p className="reveal mb-12 text-body-lg text-on-surface-variant active">{service.intro}</p>
+      <p className="card-text reveal mb-12 text-body-lg text-on-surface-variant active">{service.intro}</p>
 
       <section className="reveal mb-14 active">
         <h2 className="mb-6 text-headline-md">Why choose this?</h2>
@@ -50,7 +50,7 @@ export default function ServiceDetailContent({ service }: Props) {
               </span>
               <div>
                 <h3 className="font-semibold text-on-surface">{item.step}</h3>
-                <p className="mt-1 text-body-md text-on-surface-variant">{item.detail}</p>
+                <p className="card-text mt-1 text-body-md text-on-surface-variant">{item.detail}</p>
               </div>
             </li>
           ))}
@@ -78,7 +78,7 @@ export default function ServiceDetailContent({ service }: Props) {
             ))}
           </div>
           {service.planNote && (
-            <p className="mx-auto mt-6 max-w-2xl text-xs text-on-surface-variant">{service.planNote}</p>
+            <p className="card-text mx-auto mt-6 max-w-2xl text-xs text-on-surface-variant">{service.planNote}</p>
           )}
         </section>
       )}
@@ -92,7 +92,7 @@ export default function ServiceDetailContent({ service }: Props) {
                 <MaterialIcon name="verified_user" className="shrink-0 text-primary" />
                 <div>
                   <h3 className="font-semibold text-on-surface">{g.title}</h3>
-                  <p className="mt-1 text-body-md text-on-surface-variant">{g.detail}</p>
+                  <p className="card-text mt-1 text-body-md text-on-surface-variant">{g.detail}</p>
                 </div>
               </div>
             ))}
@@ -103,7 +103,7 @@ export default function ServiceDetailContent({ service }: Props) {
       {service.grants && (
         <section className="reveal glass mb-14 rounded-3xl p-8 text-left shadow-premium active">
           <h2 className="mb-4 text-center text-headline-md">UK grants and funding</h2>
-          <p className="text-body-md text-on-surface-variant">{service.grants}</p>
+          <p className="card-text text-body-md text-on-surface-variant">{service.grants}</p>
         </section>
       )}
 

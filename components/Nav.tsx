@@ -26,8 +26,8 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 mx-auto flex w-full max-w-container-max -translate-x-1/2 left-1/2 items-center justify-between px-4 py-4 transition-all duration-300 md:px-margin-desktop glass ${
-        scrolled ? 'py-2 shadow-lg' : ''
+      className={`fixed top-0 z-50 mx-auto flex h-[var(--nav-height)] w-full max-w-container-max -translate-x-1/2 left-1/2 items-center justify-between px-4 transition-all duration-300 md:px-margin-desktop glass ${
+        scrolled ? 'shadow-lg' : ''
       }`}
       aria-label="Main navigation"
     >
@@ -41,13 +41,13 @@ export default function Nav() {
           alt=""
           width={96}
           height={70}
-          className="h-20 w-20 bg-transparent object-contain sm:h-[88px] sm:w-[88px] md:h-16 md:w-24"
+          className="h-12 w-12 bg-transparent object-contain sm:h-14 sm:w-14 md:h-14 md:w-auto"
           priority
           unoptimized
           aria-hidden
         />
         <span
-          className="inline-flex whitespace-nowrap text-[24px] font-bold leading-none tracking-tight sm:text-[22px] md:text-[24px]"
+          className="inline-flex whitespace-nowrap text-lg font-bold leading-none tracking-tight sm:text-xl md:text-2xl"
           aria-hidden
         >
           <span className="text-[#2e7d32]">GREEN</span>
@@ -56,7 +56,7 @@ export default function Nav() {
         </span>
       </Link>
 
-      <div className="hidden items-center gap-8 md:flex">
+      <div className="hidden items-center gap-6 lg:flex lg:gap-8">
         {links.map((l) => (
           <Link
             key={l.href}
@@ -76,16 +76,21 @@ export default function Nav() {
 
       <button
         type="button"
-        className="text-primary md:hidden"
+        className="text-primary lg:hidden"
         aria-label={open ? 'Close menu' : 'Open menu'}
         aria-expanded={open}
         onClick={() => setOpen(!open)}
       >
-        <span className="material-symbols-outlined">{open ? 'close' : 'menu'}</span>
+        <span
+          className="material-symbols-outlined normal-case"
+          style={{ fontFamily: '"Material Symbols Outlined", sans-serif' }}
+        >
+          {open ? 'close' : 'menu'}
+        </span>
       </button>
 
       {open && (
-        <div className="absolute left-0 right-0 top-full flex flex-col gap-4 border-t border-outline-variant/30 bg-white/95 p-6 shadow-lg md:hidden">
+        <div className="absolute left-0 right-0 top-full flex flex-col gap-4 border-t border-outline-variant/30 bg-white/95 p-6 shadow-lg lg:hidden">
           {links.map((l) => (
             <Link
               key={l.href}

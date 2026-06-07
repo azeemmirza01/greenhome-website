@@ -1,21 +1,13 @@
 # GREENHOMESNW Website
 
-Next.js site built from the [Google Stitch](https://stitch.withgoogle.com/projects/8290632769492425087) sustainable UI design — Eco-Corporate Minimalist theme with UK city lead pages.
+Next.js static site for UK solar and heat pump lead generation.
 
 ## Stack
 
-- Next.js 15 (App Router)
+- Next.js 15 (App Router, static export)
 - React 19
 - Tailwind CSS 3
 - TypeScript
-
-## SEO / AEO / GEO
-
-- Per-page metadata, Open Graph, canonical URLs
-- JSON-LD: Organization, LocalBusiness, Service, FAQPage, BreadcrumbList
-- Dynamic sitemap (`/sitemap.xml`) and `robots.txt` (AI crawlers allowed)
-- [`/llms.txt`](public/llms.txt) for generative engine discovery
-- 20 UK location pages with unique local content
 
 ## Development
 
@@ -28,13 +20,17 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment
 
-```bash
+Copy `.env.example` to `.env.local`:
+
+```env
 NEXT_PUBLIC_SITE_URL=https://greenhomesnw.co.uk
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your-key
 ```
 
 ## Build
 
 ```bash
 npm run build
-npm start
 ```
+
+Upload everything inside the generated `out/` folder to Hostinger `public_html`. See [DEPLOY.md](DEPLOY.md).

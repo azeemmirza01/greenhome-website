@@ -52,7 +52,7 @@ export default function Services() {
               <MaterialIcon name={s.icon} className="text-3xl" />
             </div>
             <h3 className="mb-4 text-headline-md">{s.title}</h3>
-            <p className="mb-6 text-body-md text-on-surface-variant">{s.description}</p>
+            <p className="card-text mb-6 text-body-md text-on-surface-variant">{s.description}</p>
             <Link
               href={s.href}
               className="mt-auto inline-flex items-center gap-1 font-semibold text-primary"

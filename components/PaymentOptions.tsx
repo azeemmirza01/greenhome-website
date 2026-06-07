@@ -59,7 +59,7 @@ export default function PaymentOptions() {
           ))}
         </div>
 
-        <p className="mx-auto mt-10 max-w-4xl text-xs leading-relaxed text-on-surface-variant">
+        <p className="card-text mx-auto mt-10 max-w-4xl text-xs leading-relaxed text-on-surface-variant">
           Prices vary, so apply for your personal quote. Offers are subject to status and finance agreement. The first
           payment of the upfront amount plus the month 1 payment will be taken by direct debit once the system has been
           installed. Monthly payments are subject to an annual increase of 2.5%. Missing payments could have severe

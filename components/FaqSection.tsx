@@ -14,7 +14,7 @@ export default function FaqSection() {
               {item.q}
               <span className="float-right text-primary transition-transform group-open:rotate-45">+</span>
             </summary>
-            <p className="mt-4 text-body-md text-on-surface-variant">{item.a}</p>
+            <p className="card-text mt-4 text-body-md text-on-surface-variant">{item.a}</p>
           </details>
         ))}
       </div>
