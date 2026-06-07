@@ -85,6 +85,9 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
   },
   category: 'Home Improvement',
+  verification: {
+    google: 'Ua3j8lDeV2M7oOBX1DlVPylCy6nOmByjPlwcXG_bRwk',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
