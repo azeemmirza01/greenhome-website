@@ -11,11 +11,11 @@ function resolveSiteUrl(): string {
   return 'https://greenhomesnw.co.uk'
 }
 
-/** Canonical path with trailing slash for static export on Apache/Hostinger. */
+/** Canonical page path for sitemap and metadata. */
 export function toPagePath(path: string): string {
   if (!path || path === '/') return '/'
   const normalized = path.startsWith('/') ? path : `/${path}`
-  return normalized.endsWith('/') ? normalized : `${normalized}/`
+  return normalized.replace(/\/+$/, '') || '/'
 }
 
 export function toPageUrl(path: string): string {

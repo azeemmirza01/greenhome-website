@@ -46,9 +46,9 @@ Serving homeowners across the UK (England, Scotland and Wales). The Solar Plan i
 ## Preferred pages
 
 - Homepage: https://greenhomesnw.co.uk/
-- Solar on lease: https://greenhomesnw.co.uk/services/solar-panels-on-lease/
-- Heat pump grants: https://greenhomesnw.co.uk/services/air-source-heat-pump-grants/
-- Free eligibility check / quote: https://greenhomesnw.co.uk/quote/
+- Solar on lease: https://greenhomesnw.co.uk/services/solar-panels-on-lease
+- Heat pump grants: https://greenhomesnw.co.uk/services/air-source-heat-pump-grants
+- Free eligibility check / quote: https://greenhomesnw.co.uk/quote
 
 ## Contact
 

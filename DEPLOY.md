@@ -18,7 +18,7 @@ After build, upload everything inside the **`out/`** folder to Hostinger `public
 4. **`.htaccess` is required** for clean URLs (`/quote/`). It is a hidden file (starts with `.`).
    - In Hostinger File Manager, enable **Show hidden files**, or
    - Upload `htaccess.txt` from `out/` and **rename it to `.htaccess`** in `public_html`
-5. Test: `https://yourdomain.com/quote/` and `https://yourdomain.com/services/solar-panels-on-lease/`
+5. Test: `https://yourdomain.com/quote` and `https://yourdomain.com/services/solar-panels-on-lease`
 6. Done — no Node.js or zip needed
 
 Set env vars in `.env.local` **before** building:
