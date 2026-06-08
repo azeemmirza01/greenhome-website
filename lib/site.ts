@@ -86,7 +86,7 @@ export const services = [
     title: 'Non-Condensing Boiler Replacement',
     icon: 'water_heater',
     description:
-      'Replace your old non-condensing boiler with a modern efficient system. Eligible homes may qualify for up to £7,500 off a heat pump through the Boiler Upgrade Scheme.',
+      'Replace your old non-condensing boiler with a modern efficient system. Eligible homes may qualify for grant support when upgrading to a heat pump through the Boiler Upgrade Scheme.',
     href: '/services/non-condensing-boiler',
   },
 ] as const

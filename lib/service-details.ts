@@ -146,11 +146,11 @@ export const serviceDetails: ServiceDetail[] = [
     metaDescription:
       'Replace your old non-condensing boiler with a modern efficient system. UK homeowners with G-rated boilers may qualify for BUS heat pump grants. Free eligibility check.',
     intro:
-      'If your home still runs a non-condensing boiler, you are likely paying more than you need for heating and hot water. These older boilers are far less efficient than modern condensing models and are common in UK homes built before 2005. We replace non-condensing gas, oil, and LPG boilers with high-efficiency systems, and where eligible we help you access the Government Boiler Upgrade Scheme to move to a low-carbon air source heat pump with up to £7,500 off.',
+      'If your home still runs a non-condensing boiler, you are likely paying more than you need for heating and hot water. These older boilers are far less efficient than modern condensing models and are common in UK homes built before 2005. We replace non-condensing gas, oil, and LPG boilers with high-efficiency systems, and where eligible we help you access the Government Boiler Upgrade Scheme to move to a low-carbon air source heat pump.',
     benefits: [
       'Cut heating bills by replacing a G-rated non-condensing boiler',
       'Improve reliability and safety with a modern, serviced heating system',
-      'Up to £7,500 BUS grant support when upgrading to an air source heat pump',
+      'BUS grant support when upgrading to an air source heat pump',
       'Gas Safe and MCS-certified installation with full warranty',
       'We handle grant paperwork so the discount comes straight off your price',
     ],

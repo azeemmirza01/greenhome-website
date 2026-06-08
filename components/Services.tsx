@@ -36,7 +36,7 @@ const cards = [
     icon: 'water_heater',
     title: 'Non-Condensing Boiler Replacement',
     description:
-      'Still running an old non-condensing boiler? We replace inefficient G-rated units with modern systems. Eligible homeowners may qualify for up to £7,500 off a heat pump through the BUS grant.',
+      'Still running an old non-condensing boiler? We replace inefficient G-rated units with modern systems. Eligible homeowners may qualify for government grant support when upgrading to an air source heat pump through the BUS.',
     cta: 'Check Boiler Options',
     href: '/services/non-condensing-boiler',
   },

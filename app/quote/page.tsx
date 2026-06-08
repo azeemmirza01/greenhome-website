@@ -4,7 +4,7 @@ import JsonLd from '@/components/JsonLd'
 import LeadQuoteForm from '@/components/LeadQuoteForm'
 import Nav from '@/components/Nav'
 import RevealOnScroll from '@/components/RevealOnScroll'
-import { serviceCardImages } from '@/lib/images'
+import { quoteImage } from '@/lib/images'
 import { breadcrumbSchema, webPageSchema } from '@/lib/schema'
 import { quoteMetadata, quotePageDescription } from '@/lib/seo'
 import { siteConfig } from '@/lib/site'
@@ -34,8 +34,8 @@ export default function QuotePage() {
         <div className="mx-auto max-w-3xl px-4 md:px-margin-desktop">
           <div className="relative mb-10 h-48 overflow-hidden rounded-3xl shadow-premium sm:h-56">
             <Image
-              src={serviceCardImages.assessment.src}
-              alt={serviceCardImages.assessment.alt}
+              src={quoteImage.src}
+              alt={quoteImage.alt}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"
