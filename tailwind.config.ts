@@ -53,6 +53,30 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
       },
+      keyframes: {
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(28px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'slide-down': {
+          '0%': { opacity: '0', transform: 'translateY(-12px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'scale-in': {
+          '0%': { opacity: '0', transform: 'scale(0.96)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        'fade-up': 'fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+        'fade-in': 'fade-in 0.6s ease forwards',
+        'slide-down': 'slide-down 0.35s ease forwards',
+        'scale-in': 'scale-in 0.55s ease forwards',
+      },
     },
   },
   plugins: [],

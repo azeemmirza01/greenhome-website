@@ -61,7 +61,7 @@ export default function Nav() {
           <Link
             key={l.href}
             href={l.href}
-            className="text-body-md text-on-surface-variant transition-colors hover:text-primary"
+            className="nav-link text-body-md text-on-surface-variant transition-colors hover:text-primary"
           >
             {l.label}
           </Link>
@@ -90,7 +90,7 @@ export default function Nav() {
       </button>
 
       {open && (
-        <div className="absolute left-0 right-0 top-full flex flex-col gap-4 border-t border-outline-variant/30 bg-white/95 p-6 shadow-lg lg:hidden">
+        <div className="animate-slide-down absolute left-0 right-0 top-full flex flex-col gap-4 border-t border-outline-variant/30 bg-white/95 p-6 shadow-lg lg:hidden">
           {links.map((l) => (
             <Link
               key={l.href}

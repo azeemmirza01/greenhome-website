@@ -13,7 +13,7 @@ export default function PaymentOptions() {
   return (
     <section className="bg-surface-container py-24" id="payment-options">
       <div className="mx-auto max-w-container-max px-4 md:px-margin-desktop">
-        <div className="reveal mb-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2 active">
+        <div className="reveal mb-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="max-w-2xl">
             <h2 className="mb-4 text-headline-lg">Example Monthly Payment Options</h2>
             <p className="text-on-surface-variant">
@@ -21,12 +21,12 @@ export default function PaymentOptions() {
               years of hassle-free power generation, with the option to settle at any time if your circumstances change.
             </p>
           </div>
-          <div className="relative h-64 overflow-hidden rounded-3xl shadow-premium lg:h-80">
+          <div className="group relative h-64 overflow-hidden rounded-3xl shadow-premium lg:h-80">
             <Image
               src={paymentImage.src}
               alt={paymentImage.alt}
               fill
-              className="object-cover"
+              className="img-zoom object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -36,12 +36,12 @@ export default function PaymentOptions() {
           {plans.map((p, i) => (
             <div
               key={p.upfront}
-              className={`reveal relative flex flex-col rounded-3xl p-8 shadow-premium active ${
+              className={`reveal hover-lift relative flex flex-col rounded-3xl p-8 shadow-premium ${
                 p.featured
                   ? 'bg-primary text-on-primary ring-2 ring-primary'
                   : 'bg-surface-container-lowest'
               }`}
-              style={{ transitionDelay: `${i * 100}ms` }}
+              style={{ '--reveal-delay': `${i * 100}ms` } as React.CSSProperties}
             >
               {p.badge && (
                 <span className="absolute right-6 top-6 rounded-full bg-on-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider">

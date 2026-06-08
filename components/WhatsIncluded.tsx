@@ -28,7 +28,7 @@ const items = [
 export default function WhatsIncluded() {
   return (
     <section className="mx-auto max-w-container-max px-4 py-24 md:px-margin-desktop" id="whats-included">
-      <div className="reveal mb-16 max-w-2xl active">
+      <div className="reveal mb-16 max-w-2xl">
         <h2 className="mb-4 text-headline-lg">What’s Included in Your Solar Plan</h2>
         <p className="text-on-surface-variant">
           Gain energy independence and future-proof your home with reliable service and predictable costs.
@@ -38,15 +38,15 @@ export default function WhatsIncluded() {
         {items.map((f, i) => (
           <div
             key={f.title}
-            className="reveal glass overflow-hidden rounded-3xl shadow-premium active"
-            style={{ transitionDelay: `${i * 100}ms` }}
+            className="reveal hover-lift glass overflow-hidden rounded-3xl shadow-premium"
+            style={{ '--reveal-delay': `${i * 100}ms` } as React.CSSProperties}
           >
             <div className="relative h-40 w-full">
               <Image
                 src={whatsIncludedImages[i].src}
                 alt={whatsIncludedImages[i].alt}
                 fill
-                className="object-cover"
+                className="img-zoom object-cover"
                 sizes="(max-width: 768px) 100vw, 25vw"
               />
             </div>

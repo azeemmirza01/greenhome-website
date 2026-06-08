@@ -62,7 +62,7 @@ export default function Testimonials() {
   return (
     <section className="overflow-hidden bg-surface-container py-24" id="testimonials">
       <div className="mx-auto max-w-container-max px-4 md:px-margin-desktop">
-        <div className="reveal mb-16 flex items-end justify-between active">
+        <div className="reveal mb-16 flex items-end justify-between">
           <div>
             <h2 className="text-headline-lg">What Our Customers Say</h2>
             <p className="mt-2 text-on-surface-variant">Hear from UK homeowners who&apos;ve made the switch.</p>
@@ -89,7 +89,7 @@ export default function Testimonials() {
 
         <div
           ref={sliderRef}
-          className="reveal flex gap-gutter overflow-x-auto pb-8 snap-x no-scrollbar active"
+          className="reveal flex gap-gutter overflow-x-auto pb-8 snap-x no-scrollbar"
           onMouseEnter={() => {
             pausedRef.current = true
           }}

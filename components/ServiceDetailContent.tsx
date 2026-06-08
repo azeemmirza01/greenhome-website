@@ -8,15 +8,15 @@ type Props = { service: ServiceDetail }
 export default function ServiceDetailContent({ service }: Props) {
   return (
     <article className="mx-auto max-w-3xl px-4 text-center md:px-margin-desktop">
-      <div className="reveal mb-8 flex justify-center active">
+      <div className="reveal mb-8 flex justify-center">
         <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary md:h-20 md:w-20">
           <MaterialIcon name={service.icon} className="text-4xl md:text-5xl" />
         </div>
       </div>
 
-      <p className="card-text reveal mb-12 text-body-lg text-on-surface-variant active">{service.intro}</p>
+      <p className="card-text reveal mb-12 text-body-lg text-on-surface-variant">{service.intro}</p>
 
-      <section className="reveal mb-14 active">
+      <section className="reveal mb-14">
         <h2 className="mb-6 text-headline-md">Why choose this?</h2>
         <ul className="mx-auto max-w-xl space-y-3 text-left text-body-md text-on-surface-variant">
           {service.benefits.map((item) => (
@@ -28,7 +28,7 @@ export default function ServiceDetailContent({ service }: Props) {
         </ul>
       </section>
 
-      <section className="reveal mb-14 active">
+      <section className="reveal mb-14">
         <h2 className="mb-6 text-headline-md">What&apos;s included</h2>
         <ul className="mx-auto max-w-xl space-y-3 text-left text-body-md text-on-surface-variant">
           {service.included.map((item) => (
@@ -40,7 +40,7 @@ export default function ServiceDetailContent({ service }: Props) {
         </ul>
       </section>
 
-      <section className="reveal mb-14 active">
+      <section className="reveal mb-14">
         <h2 className="mb-8 text-headline-md">How it works</h2>
         <ol className="mx-auto max-w-xl space-y-6 text-left">
           {service.process.map((item, i) => (
@@ -58,7 +58,7 @@ export default function ServiceDetailContent({ service }: Props) {
       </section>
 
       {service.planOptions && service.planOptions.length > 0 && (
-        <section className="reveal mb-14 active">
+        <section className="reveal mb-14">
           <h2 className="mb-2 text-headline-md">Example monthly payments</h2>
           <p className="mx-auto mb-8 max-w-xl text-body-md text-on-surface-variant">
             Choose the upfront amount that suits you. The more you pay upfront, the lower your monthly payment.
@@ -84,7 +84,7 @@ export default function ServiceDetailContent({ service }: Props) {
       )}
 
       {service.guarantees && service.guarantees.length > 0 && (
-        <section className="reveal mb-14 active">
+        <section className="reveal mb-14">
           <h2 className="mb-8 text-headline-md">Our guarantees</h2>
           <div className="mx-auto grid max-w-2xl gap-4 text-left sm:grid-cols-2">
             {service.guarantees.map((g) => (
@@ -101,13 +101,13 @@ export default function ServiceDetailContent({ service }: Props) {
       )}
 
       {service.grants && (
-        <section className="reveal glass mb-14 rounded-3xl p-8 text-left shadow-premium active">
+        <section className="reveal glass mb-14 rounded-3xl p-8 text-left shadow-premium">
           <h2 className="mb-4 text-center text-headline-md">UK grants and funding</h2>
           <p className="card-text text-body-md text-on-surface-variant">{service.grants}</p>
         </section>
       )}
 
-      <section className="reveal mb-14 active">
+      <section className="reveal mb-14">
         <h2 className="mb-6 text-headline-md">Ideal for</h2>
         <ul className="mx-auto flex max-w-xl flex-col gap-2 text-body-md text-on-surface-variant">
           {service.idealFor.map((item) => (
@@ -116,7 +116,7 @@ export default function ServiceDetailContent({ service }: Props) {
         </ul>
       </section>
 
-      <div className="reveal flex flex-col items-center justify-center gap-4 sm:flex-row active">
+      <div className="reveal flex flex-col items-center justify-center gap-4 sm:flex-row">
         <Link
           href="/quote"
           className="shimmer-btn rounded-full bg-primary px-8 py-4 text-label-bold text-on-primary shadow-lg transition-all hover:scale-105"
@@ -131,7 +131,7 @@ export default function ServiceDetailContent({ service }: Props) {
         </Link>
       </div>
 
-      <p className="reveal mt-10 flex flex-wrap items-center gap-2 text-sm text-on-surface-variant active">
+      <p className="reveal mt-10 flex flex-wrap items-center gap-2 text-sm text-on-surface-variant">
         <span>Questions?</span>
         <a
           href={siteConfig.whatsappUrl}

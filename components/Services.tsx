@@ -54,7 +54,7 @@ const cards = [
 export default function Services() {
   return (
     <section className="mx-auto max-w-container-max px-4 py-24 md:px-margin-desktop" id="services">
-      <div className="reveal mb-16 text-center active">
+      <div className="reveal mb-16 text-center">
         <h2 className="mb-4 text-headline-lg">Clean Energy, Made Simple</h2>
         <p className="mx-auto mb-4 max-w-2xl text-on-surface-variant">
           Solar panels, heat pump grants, full central heating upgrades, and non-condensing boiler replacement for homes
@@ -63,17 +63,18 @@ export default function Services() {
         <div className="mx-auto h-1.5 w-20 rounded-full bg-primary" aria-hidden />
       </div>
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-gutter sm:grid-cols-2 lg:grid-cols-3">
-        {cards.map((s) => (
+        {cards.map((s, i) => (
           <article
             key={s.id}
-            className="glass service-card reveal group flex flex-col overflow-hidden rounded-3xl shadow-premium active"
+            className="glass service-card reveal group flex flex-col overflow-hidden rounded-3xl shadow-premium"
+            style={{ '--reveal-delay': `${i * 80}ms` } as React.CSSProperties}
           >
             <div className="relative h-48 w-full">
               <Image
                 src={serviceCardImages[s.id].src}
                 alt={serviceCardImages[s.id].alt}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="img-zoom object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>

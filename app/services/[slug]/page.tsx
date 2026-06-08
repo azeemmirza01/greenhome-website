@@ -56,7 +56,7 @@ export default async function ServicePage({ params }: Props) {
       />
       <Nav />
       <main className="min-h-screen bg-surface pt-[var(--nav-height)] pb-24">
-        <header className="reveal mx-auto mb-12 max-w-3xl px-4 text-center active md:px-margin-desktop">
+        <header className="reveal mx-auto mb-12 max-w-3xl px-4 text-center md:px-margin-desktop">
           <nav aria-label="Breadcrumb" className="mb-6 text-sm text-on-surface-variant">
             <Link href="/" className="hover:text-primary">
               Home

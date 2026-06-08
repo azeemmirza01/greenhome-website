@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent" aria-hidden />
       </div>
 
-      <div className="relative z-10 w-full max-w-3xl reveal active">
+      <div className="hero-stagger relative z-10 w-full max-w-3xl">
         <div className="mb-4 inline-flex max-w-full flex-wrap items-center gap-1.5 rounded-full border border-primary/20 bg-primary-container/20 px-2.5 py-1.5 text-primary sm:mb-6 sm:gap-2 sm:px-3 sm:py-1">
           <MaterialIcon name="solar_power" className="shrink-0 text-sm" />
           <span className="min-w-0 text-[10px] font-semibold uppercase leading-snug tracking-wide sm:text-xs md:text-sm md:tracking-wider">

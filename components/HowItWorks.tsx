@@ -37,7 +37,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-surface-container-low py-24" id="how-it-works">
       <div className="mx-auto max-w-container-max px-4 md:px-margin-desktop">
-        <div className="reveal mb-16 max-w-2xl active">
+        <div className="reveal mb-16 max-w-2xl">
           <h2 className="mb-4 text-headline-lg">How the Solar Plan Works</h2>
           <p className="text-on-surface-variant">
             We’re here to help you get a payment plan to fit your needs, hassle-free installation, and comfort
@@ -48,15 +48,15 @@ export default function HowItWorks() {
           {steps.map((s, i) => (
             <li
               key={s.num}
-              className="reveal glass flex flex-col overflow-hidden rounded-3xl shadow-premium active"
-              style={{ transitionDelay: `${i * 100}ms` }}
+              className="reveal hover-lift glass flex flex-col overflow-hidden rounded-3xl shadow-premium"
+              style={{ '--reveal-delay': `${i * 100}ms` } as React.CSSProperties}
             >
               <div className="relative h-44 w-full">
                 <Image
                   src={howItWorksImages[i].src}
                   alt={howItWorksImages[i].alt}
                   fill
-                  className="object-cover"
+                  className="img-zoom object-cover"
                   sizes="(max-width: 768px) 100vw, 25vw"
                 />
               </div>

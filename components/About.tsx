@@ -17,12 +17,12 @@ export default function About() {
   return (
     <section className="bg-surface-container-low py-24" id="about">
       <div className="mx-auto grid max-w-container-max grid-cols-1 items-center gap-20 px-4 md:grid-cols-2 md:px-margin-desktop">
-        <div className="reveal relative h-[560px] overflow-hidden rounded-3xl shadow-2xl active">
+        <div className="reveal-left group relative h-[560px] overflow-hidden rounded-3xl shadow-2xl">
           <Image
             src={aboutImage.src}
             alt={aboutImage.alt}
             fill
-            className="object-cover transition-transform duration-[5s] hover:scale-105"
+            className="img-zoom object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="glass absolute bottom-8 left-8 max-w-xs rounded-2xl p-6">
@@ -36,7 +36,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="reveal space-y-8 active">
+        <div className="reveal-right space-y-8">
           <div className="space-y-5">
             <h2 className="text-headline-lg">The UK’s Trusted Solar &amp; Renewable Energy Partner</h2>
             <p className="text-body-lg text-on-surface-variant">

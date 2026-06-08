@@ -42,7 +42,7 @@ const guarantees = [
 export default function Guarantees() {
   return (
     <section className="mx-auto max-w-container-max px-4 py-24 md:px-margin-desktop" id="guarantees">
-      <div className="reveal mb-16 max-w-2xl active">
+      <div className="reveal mb-16 max-w-2xl">
         <h2 className="mb-4 text-headline-lg">Our Guarantees</h2>
         <p className="text-on-surface-variant">
           Your Solar Plan is backed by our finance partner’s guarantees.
@@ -52,8 +52,8 @@ export default function Guarantees() {
         {guarantees.map((g, i) => (
           <div
             key={g.title}
-            className="reveal flex gap-4 rounded-3xl bg-surface-container-low p-7 active"
-            style={{ transitionDelay: `${i * 75}ms` }}
+            className="reveal hover-lift flex gap-4 rounded-3xl bg-surface-container-low p-7"
+            style={{ '--reveal-delay': `${i * 75}ms` } as React.CSSProperties}
           >
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
               <MaterialIcon name={g.icon} className="text-2xl" />

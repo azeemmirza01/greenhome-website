@@ -22,7 +22,7 @@ export default function CtaSection() {
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(163,246,156,0.15),rgba(0,34,4,0.35))]"
         aria-hidden
       />
-      <div className="reveal relative z-10 mx-auto max-w-container-max text-center active">
+      <div className="reveal-scale relative z-10 mx-auto max-w-container-max text-center">
         <h2 className="mb-6 text-[36px] font-bold leading-tight text-on-primary-fixed md:text-[52px]">
           Find Out If You Could Make a Net Saving From Year One
         </h2>

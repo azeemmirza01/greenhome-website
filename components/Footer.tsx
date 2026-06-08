@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-navy px-4 py-20 text-[#bac8dc] md:px-margin-desktop">
       <div className="mx-auto grid max-w-container-max grid-cols-1 gap-gutter md:grid-cols-3">
-        <div>
+        <div className="reveal">
           <Link
             href="/"
             className="mb-8 inline-flex items-center gap-3"
@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="reveal" style={{ '--reveal-delay': '100ms' } as React.CSSProperties}>
           <h2 className="mb-6 font-semibold uppercase tracking-wider text-[#d6e4f9]">Services</h2>
           <ul className="space-y-4 text-sm">
             <li><Link href="/services/solar-panels-on-lease" className="transition-colors hover:text-primary">Solar Panels on Lease</Link></li>
@@ -66,7 +66,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="reveal" style={{ '--reveal-delay': '200ms' } as React.CSSProperties}>
           <h2 className="mb-6 font-semibold uppercase tracking-wider text-[#d6e4f9]">Contact</h2>
           <ul className="space-y-4 text-sm">
             <li className="flex gap-2">
@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-20 max-w-container-max border-t border-white/10 pt-8 text-center text-xs opacity-60">
+      <div className="reveal mx-auto mt-20 max-w-container-max border-t border-white/10 pt-8 text-center text-xs opacity-60">
         <p>
           {siteConfig.legalName} is a {siteConfig.companyType.toLowerCase()} registered in {siteConfig.address.region}.
           Registered office: {siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.postalCode}.
