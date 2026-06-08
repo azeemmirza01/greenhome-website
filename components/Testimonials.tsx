@@ -1,46 +1,63 @@
 'use client'
 
-import Image from 'next/image'
-import { useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import MaterialIcon from '@/components/MaterialIcon'
+
+const INTERVAL_MS = 5000
 
 const testimonials = [
   {
     quote: 'Being able to spread payment while making savings made our decision simple.',
     name: 'Julie S',
     location: 'UK Homeowner · Verified Review',
-    image: '/images/website-post-1.png',
-    imageAlt: 'UK homeowner with solar panels installed at no upfront cost',
   },
   {
     quote: 'We feel safe in the knowledge that our system is covered from now and into the future.',
     name: 'Roy W',
     location: 'UK Homeowner · Verified Review',
-    image: '/images/website-post-3.png',
-    imageAlt: 'Solar PV system providing long-term energy savings for a UK home',
   },
   {
     quote: 'Easy process from start to finish.',
     name: 'Mathew T',
     location: 'UK Homeowner · Verified Review',
-    image: '/images/website-post-6.png',
-    imageAlt: 'GreenHomesNW renewable energy installation completed for a UK property',
   },
   {
     quote: 'A great experience for such a major investment. I confidently recommend.',
     name: 'Michael R',
     location: 'UK Homeowner · Verified Review',
-    image: '/images/website-post-8.png',
-    imageAlt: 'Affordable solar plan delivering savings for UK homeowners',
   },
 ]
 
 export default function Testimonials() {
   const sliderRef = useRef<HTMLDivElement>(null)
+  const pausedRef = useRef(false)
 
-  const scroll = (dir: number) => {
-    sliderRef.current?.scrollBy({ left: dir * 424, behavior: 'smooth' })
-  }
+  const scrollByCard = useCallback((dir: number) => {
+    const el = sliderRef.current
+    if (!el) return
+
+    const card = el.querySelector('blockquote')
+    const step = (card?.offsetWidth ?? 400) + 24
+    const maxScroll = el.scrollWidth - el.clientWidth
+
+    if (dir > 0 && el.scrollLeft >= maxScroll - 8) {
+      el.scrollTo({ left: 0, behavior: 'smooth' })
+      return
+    }
+    if (dir < 0 && el.scrollLeft <= 8) {
+      el.scrollTo({ left: maxScroll, behavior: 'smooth' })
+      return
+    }
+
+    el.scrollBy({ left: dir * step, behavior: 'smooth' })
+  }, [])
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (!pausedRef.current) scrollByCard(1)
+    }, INTERVAL_MS)
+    return () => clearInterval(timer)
+  }, [scrollByCard])
 
   return (
     <section className="overflow-hidden bg-surface-container py-24" id="testimonials">
@@ -55,7 +72,7 @@ export default function Testimonials() {
               type="button"
               aria-label="Previous testimonial"
               className="rounded-full border border-outline p-2 transition-all duration-300 hover:bg-primary hover:text-on-primary"
-              onClick={() => scroll(-1)}
+              onClick={() => scrollByCard(-1)}
             >
               <MaterialIcon name="arrow_back" />
             </button>
@@ -63,7 +80,7 @@ export default function Testimonials() {
               type="button"
               aria-label="Next testimonial"
               className="rounded-full border border-outline p-2 transition-all duration-300 hover:bg-primary hover:text-on-primary"
-              onClick={() => scroll(1)}
+              onClick={() => scrollByCard(1)}
             >
               <MaterialIcon name="arrow_forward" />
             </button>
@@ -73,16 +90,24 @@ export default function Testimonials() {
         <div
           ref={sliderRef}
           className="reveal flex gap-gutter overflow-x-auto pb-8 snap-x no-scrollbar active"
+          onMouseEnter={() => {
+            pausedRef.current = true
+          }}
+          onMouseLeave={() => {
+            pausedRef.current = false
+          }}
+          onFocus={() => {
+            pausedRef.current = true
+          }}
+          onBlur={() => {
+            pausedRef.current = false
+          }}
         >
           {testimonials.map((t) => (
             <blockquote
               key={t.name}
-              className="min-w-[300px] snap-start overflow-hidden rounded-3xl bg-surface-container-lowest shadow-premium transition-transform duration-300 hover:scale-[1.02] md:min-w-[400px]"
+              className="min-w-[300px] snap-start rounded-3xl bg-surface-container-lowest p-8 shadow-premium transition-transform duration-300 hover:scale-[1.02] md:min-w-[400px]"
             >
-              <div className="relative h-36 w-full">
-                <Image src={t.image} alt={t.imageAlt} fill className="object-cover" sizes="400px" />
-              </div>
-              <div className="p-8">
               <div className="mb-4 flex text-tertiary" aria-hidden>
                 {Array.from({ length: 5 }).map((_, i) => (
                   <MaterialIcon key={i} name="star" filled className="text-tertiary" />
@@ -93,7 +118,6 @@ export default function Testimonials() {
                 <p className="font-semibold">{t.name}</p>
                 <p className="text-sm text-on-surface-variant">{t.location}</p>
               </footer>
-              </div>
             </blockquote>
           ))}
         </div>
