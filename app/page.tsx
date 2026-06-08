@@ -3,7 +3,6 @@ import About from '@/components/About'
 import JsonLd from '@/components/JsonLd'
 import CtaSection from '@/components/CtaSection'
 import FaqSection from '@/components/FaqSection'
-import GalleryShowcase from '@/components/GalleryShowcase'
 import Footer from '@/components/Footer'
 import Guarantees from '@/components/Guarantees'
 import Hero from '@/components/Hero'
@@ -44,7 +43,6 @@ export default function HomePage() {
         <PaymentOptions />
         <Guarantees />
         <About />
-        <GalleryShowcase />
         <Testimonials />
         <FaqSection />
         <CtaSection />
