@@ -176,6 +176,8 @@ export default function LeadQuoteForm({ city, defaultPostcode = '', hideTitle = 
           </option>
           <option>Air source heat pump grant</option>
           <option>Solar panels on lease</option>
+          <option>Full-time central heating</option>
+          <option>Non-condensing boiler replacement</option>
           <option>Both heat pump grant & solar</option>
         </select>
       </div>

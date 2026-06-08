@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, writeFileSync } from 'node:fs'
+import { copyFileSync, existsSync, readdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 const root = process.cwd()
@@ -18,12 +18,14 @@ if (!existsSync(htaccessSource)) {
 copyFileSync(htaccessSource, join(outDir, '.htaccess'))
 copyFileSync(htaccessSource, join(outDir, 'htaccess.txt'))
 
-const required = [
-  'index.html',
-  'quote/index.html',
-  'services/solar-panels-on-lease/index.html',
-  'services/air-source-heat-pump-grants/index.html',
-]
+const required = ['index.html', 'quote/index.html']
+const servicesDir = join(outDir, 'services')
+
+if (existsSync(servicesDir)) {
+  for (const slug of readdirSync(servicesDir)) {
+    required.push(`services/${slug}/index.html`)
+  }
+}
 
 const missing = required.filter((rel) => !existsSync(join(outDir, rel)))
 if (missing.length > 0) {
@@ -32,6 +34,10 @@ if (missing.length > 0) {
   process.exit(1)
 }
 
+const serviceFolders = existsSync(servicesDir)
+  ? readdirSync(servicesDir).map((slug) => `  - services/${slug}/`)
+  : []
+
 writeFileSync(
   join(outDir, 'UPLOAD-README.txt'),
   [
@@ -39,17 +45,19 @@ writeFileSync(
     '',
     'Required folders (must upload the folders, not only index.html):',
     '  - quote/',
-    '  - services/solar-panels-on-lease/',
-    '  - services/air-source-heat-pump-grants/',
+    ...serviceFolders,
     '',
     'Set .htaccess: upload htaccess.txt and rename to .htaccess',
     '',
     'Test URLs:',
     '  https://greenhomesnw.co.uk/quote/',
-    '  https://greenhomesnw.co.uk/services/solar-panels-on-lease/',
+    ...serviceFolders.map((line) => {
+      const slug = line.trim().replace('  - services/', '').replace('/', '')
+      return `  https://greenhomesnw.co.uk/services/${slug}/`
+    }),
     '',
   ].join('\n'),
 )
 
 console.log('postbuild: copied .htaccess, htaccess.txt, UPLOAD-README.txt')
-console.log('postbuild: verified quote/ and services/ folders in out/')
+console.log(`postbuild: verified ${required.length} required pages in out/`)

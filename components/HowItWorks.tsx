@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import MaterialIcon from '@/components/MaterialIcon'
+import { howItWorksImages } from '@/lib/images'
 
 const steps = [
   {
@@ -46,9 +48,19 @@ export default function HowItWorks() {
           {steps.map((s, i) => (
             <li
               key={s.num}
-              className="reveal glass flex flex-col rounded-3xl p-8 shadow-premium active"
+              className="reveal glass flex flex-col overflow-hidden rounded-3xl shadow-premium active"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
+              <div className="relative h-44 w-full">
+                <Image
+                  src={howItWorksImages[i].src}
+                  alt={howItWorksImages[i].alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 25vw"
+                />
+              </div>
+              <div className="flex flex-col p-8">
               <span className="mb-4 text-display-sm font-bold text-primary/30">{s.num}</span>
               <h3 className="mb-3 text-headline-md">{s.title}</h3>
               <p className="card-text text-body-md text-on-surface-variant">{s.detail}</p>
@@ -62,6 +74,7 @@ export default function HowItWorks() {
                   ))}
                 </ul>
               )}
+              </div>
             </li>
           ))}
         </ol>

@@ -61,6 +61,8 @@ export default function Footer() {
           <ul className="space-y-4 text-sm">
             <li><Link href="/services/solar-panels-on-lease" className="transition-colors hover:text-primary">Solar Panels on Lease</Link></li>
             <li><Link href="/services/air-source-heat-pump-grants" className="transition-colors hover:text-primary">Air Source Heat Pump Grants</Link></li>
+            <li><Link href="/services/full-time-central-heating" className="transition-colors hover:text-primary">Full-Time Central Heating</Link></li>
+            <li><Link href="/services/non-condensing-boiler" className="transition-colors hover:text-primary">Non-Condensing Boiler Replacement</Link></li>
           </ul>
         </div>
 

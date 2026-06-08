@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import MaterialIcon from '@/components/MaterialIcon'
+import { paymentImage } from '@/lib/images'
 
 const plans = [
   { upfront: '£0', monthly: '£72', featured: true, badge: 'Most popular' },
@@ -11,12 +13,23 @@ export default function PaymentOptions() {
   return (
     <section className="bg-surface-container py-24" id="payment-options">
       <div className="mx-auto max-w-container-max px-4 md:px-margin-desktop">
-        <div className="reveal mb-16 max-w-2xl active">
-          <h2 className="mb-4 text-headline-lg">Example Monthly Payment Options</h2>
-          <p className="text-on-surface-variant">
-            Based on a £10,000 solar and battery system installation and a 25-year plan. You can choose from 5 to 25
-            years of hassle-free power generation, with the option to settle at any time if your circumstances change.
-          </p>
+        <div className="reveal mb-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2 active">
+          <div className="max-w-2xl">
+            <h2 className="mb-4 text-headline-lg">Example Monthly Payment Options</h2>
+            <p className="text-on-surface-variant">
+              Based on a £10,000 solar and battery system installation and a 25-year plan. You can choose from 5 to 25
+              years of hassle-free power generation, with the option to settle at any time if your circumstances change.
+            </p>
+          </div>
+          <div className="relative h-64 overflow-hidden rounded-3xl shadow-premium lg:h-80">
+            <Image
+              src={paymentImage.src}
+              alt={paymentImage.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-gutter md:grid-cols-3">

@@ -73,4 +73,20 @@ export const services = [
       'Eligible UK homeowners may be able to access support for an air source heat pump through the Government Boiler Upgrade Scheme (BUS). Check your eligibility to find out if you qualify.',
     href: '/services/air-source-heat-pump-grants',
   },
+  {
+    id: 'full-time-central-heating',
+    title: 'Full-Time Central Heating',
+    icon: 'hvac',
+    description:
+      'Complete central heating installation and upgrades for UK homes, including radiators, pipework, controls, and boiler integration by Gas Safe registered engineers.',
+    href: '/services/full-time-central-heating',
+  },
+  {
+    id: 'non-condensing-boiler',
+    title: 'Non-Condensing Boiler Replacement',
+    icon: 'water_heater',
+    description:
+      'Replace your old non-condensing boiler with a modern efficient system. Eligible homes may qualify for up to £7,500 off a heat pump through the Boiler Upgrade Scheme.',
+    href: '/services/non-condensing-boiler',
+  },
 ] as const

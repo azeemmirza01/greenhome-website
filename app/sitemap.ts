@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { siteConfig, toPageUrl } from '@/lib/site'
+import { toPageUrl } from '@/lib/site'
 import { getAllServiceSlugs } from '@/lib/service-details'
 
 export const dynamic = 'force-static'

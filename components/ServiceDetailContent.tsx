@@ -1,13 +1,29 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import MaterialIcon from '@/components/MaterialIcon'
+import { serviceImages } from '@/lib/images'
 import type { ServiceDetail } from '@/lib/service-details'
 import { siteConfig } from '@/lib/site'
 
 type Props = { service: ServiceDetail }
 
 export default function ServiceDetailContent({ service }: Props) {
+  const banner = serviceImages[service.slug]
+
   return (
     <article className="mx-auto max-w-3xl px-4 text-center md:px-margin-desktop">
+      {banner && (
+        <div className="reveal relative mx-auto mb-10 h-56 overflow-hidden rounded-3xl shadow-premium active sm:h-72 md:h-80">
+          <Image
+            src={banner.src}
+            alt={banner.alt}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 768px"
+            priority
+          />
+        </div>
+      )}
       <div className="reveal mb-8 flex justify-center active">
         <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary md:h-20 md:w-20">
           <MaterialIcon name={service.icon} className="text-4xl md:text-5xl" />

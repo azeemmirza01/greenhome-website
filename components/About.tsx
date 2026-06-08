@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import MaterialIcon from '@/components/MaterialIcon'
+import { aboutImage } from '@/lib/images'
 import { siteConfig } from '@/lib/site'
 
 const points = [
@@ -18,8 +19,8 @@ export default function About() {
       <div className="mx-auto grid max-w-container-max grid-cols-1 items-center gap-20 px-4 md:grid-cols-2 md:px-margin-desktop">
         <div className="reveal relative h-[560px] overflow-hidden rounded-3xl shadow-2xl active">
           <Image
-            src="/images/about.png"
-            alt="Engineer installing rooftop solar panels for a UK homeowner under the GreenHomesNW Solar Plan"
+            src={aboutImage.src}
+            alt={aboutImage.alt}
             fill
             className="object-cover transition-transform duration-[5s] hover:scale-105"
             sizes="(max-width: 768px) 100vw, 50vw"

@@ -103,6 +103,79 @@ export const serviceDetails: ServiceDetail[] = [
       'People who want predictable costs and no maintenance worries',
     ],
   },
+  {
+    slug: 'full-time-central-heating',
+    title: 'Full-Time Central Heating',
+    icon: 'hvac',
+    metaDescription:
+      'Full central heating installation and upgrades for UK homes. New radiators, pipework, controls, and boiler integration by Gas Safe registered engineers. Free survey and quote.',
+    intro:
+      'Keep your home warm and comfortable with a properly designed full-time central heating system. We install and upgrade complete wet central heating setups for UK properties, including boilers, radiators, pipework, and smart controls. Our Gas Safe registered engineers size the system for your rooms, improve efficiency, and make sure every radiator heats evenly so you get reliable warmth through winter without wasted energy.',
+    benefits: [
+      'Whole-home comfort with radiators and pipework designed for your property',
+      'Lower running costs with modern controls and a correctly sized system',
+      'Gas Safe registered installation with Building Regulations compliance',
+      'Even heat distribution with balanced radiators and efficient pipework',
+      'Clear upfront quote after a free home heating survey',
+    ],
+    included: [
+      'Free home survey and heat loss assessment',
+      'Boiler and radiator sizing for your rooms and hot water needs',
+      'Full radiator, pipework, and valve installation or upgrade',
+      'Smart thermostat and programmer setup',
+      'System flush, commissioning, and Gas Safe certification',
+      'Handover with running-cost guidance and aftercare support',
+    ],
+    process: [
+      { step: 'Home survey', detail: 'We assess your rooms, existing pipework, and hot water use to design the right full-time central heating setup.' },
+      { step: 'Fixed quote', detail: 'You receive a clear itemised quote covering boiler, radiators, labour, and any grant support you may qualify for.' },
+      { step: 'Installation', detail: 'Gas Safe engineers install your system with minimal disruption, including flush, test, and commissioning.' },
+      { step: 'Handover', detail: 'We set your controls, balance radiators, and explain how to run the system efficiently.' },
+    ],
+    idealFor: [
+      'Homeowners replacing an old or failing central heating system',
+      'Properties with cold rooms, uneven heating, or outdated radiators',
+      'Households planning a boiler upgrade alongside new radiators and pipework',
+      'Landlords bringing rental homes up to modern heating standards',
+    ],
+  },
+  {
+    slug: 'non-condensing-boiler',
+    title: 'Non-Condensing Boiler Replacement',
+    icon: 'water_heater',
+    metaDescription:
+      'Replace your old non-condensing boiler with a modern efficient system. UK homeowners with G-rated boilers may qualify for BUS heat pump grants. Free eligibility check.',
+    intro:
+      'If your home still runs a non-condensing boiler, you are likely paying more than you need for heating and hot water. These older boilers are far less efficient than modern condensing models and are common in UK homes built before 2005. We replace non-condensing gas, oil, and LPG boilers with high-efficiency systems, and where eligible we help you access the Government Boiler Upgrade Scheme to move to a low-carbon air source heat pump with up to £7,500 off.',
+    benefits: [
+      'Cut heating bills by replacing a G-rated non-condensing boiler',
+      'Improve reliability and safety with a modern, serviced heating system',
+      'Up to £7,500 BUS grant support when upgrading to an air source heat pump',
+      'Gas Safe and MCS-certified installation with full warranty',
+      'We handle grant paperwork so the discount comes straight off your price',
+    ],
+    included: [
+      'Free check of your current non-condensing boiler and eligibility',
+      'Recommendation for condensing boiler or heat pump upgrade',
+      'Safe removal and disposal of your old boiler',
+      'MCS-certified heat pump or high-efficiency boiler installation',
+      'BUS grant application managed on your behalf where eligible',
+      'Smart controls, commissioning, and annual service reminders',
+    ],
+    process: [
+      { step: 'Boiler check', detail: 'We confirm whether your boiler is non-condensing and what upgrade routes are available for your home.' },
+      { step: 'Grant check', detail: 'We verify Boiler Upgrade Scheme eligibility for heat pump replacement in England and Wales.' },
+      { step: 'Install', detail: 'Our accredited engineers remove the old unit and install your new heating system to current regulations.' },
+      { step: 'Support', detail: 'We register warranties, set your controls, and explain running costs and maintenance.' },
+    ],
+    grants: ukGrants.heatPump,
+    idealFor: [
+      'Homes with a non-condensing gas, oil, or LPG boiler',
+      'Households with boilers over 15 years old or poor efficiency ratings',
+      'Homeowners who want to reduce carbon emissions and heating costs',
+      'Properties in England and Wales exploring BUS heat pump support',
+    ],
+  },
 ]
 
 export function getServiceBySlug(slug: string): ServiceDetail | undefined {

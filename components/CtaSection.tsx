@@ -1,9 +1,19 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import { ctaImage } from '@/lib/images'
 import { siteConfig } from '@/lib/site'
 
 export default function CtaSection() {
   return (
     <section className="relative overflow-hidden bg-primary-fixed px-4 py-24 md:px-margin-desktop">
+      <Image
+        src={ctaImage.src}
+        alt=""
+        fill
+        className="object-cover opacity-20"
+        sizes="100vw"
+        aria-hidden
+      />
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent)]"
         aria-hidden

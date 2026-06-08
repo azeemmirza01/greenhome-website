@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import MaterialIcon from '@/components/MaterialIcon'
+import { serviceCardImages } from '@/lib/images'
 
 const cards = [
   {
@@ -14,11 +16,29 @@ const cards = [
   {
     id: 'heat-pump',
     icon: 'heat_pump',
-    title: 'Air Source Heat Pumps ',
+    title: 'Air Source Heat Pumps',
     description:
       "Eligible UK homeowners may be able to access support for an air source heat pump through the Government's Boiler Upgrade Scheme (BUS). Check your eligibility to find out if you qualify.",
     cta: 'Check My Eligibility',
     href: '/services/air-source-heat-pump-grants',
+  },
+  {
+    id: 'central-heating',
+    icon: 'hvac',
+    title: 'Full-Time Central Heating',
+    description:
+      'Upgrade to a complete central heating system built for UK homes. We install and replace boilers, radiators, pipework, and smart controls so every room stays warm efficiently all year round.',
+    cta: 'Get a Heating Quote',
+    href: '/services/full-time-central-heating',
+  },
+  {
+    id: 'non-condensing-boiler',
+    icon: 'water_heater',
+    title: 'Non-Condensing Boiler Replacement',
+    description:
+      'Still running an old non-condensing boiler? We replace inefficient G-rated units with modern systems. Eligible homeowners may qualify for up to £7,500 off a heat pump through the BUS grant.',
+    cta: 'Check Boiler Options',
+    href: '/services/non-condensing-boiler',
   },
   {
     id: 'assessment',
@@ -37,17 +57,27 @@ export default function Services() {
       <div className="reveal mb-16 text-center active">
         <h2 className="mb-4 text-headline-lg">Clean Energy, Made Simple</h2>
         <p className="mx-auto mb-4 max-w-2xl text-on-surface-variant">
-          No upfront cost solar panels, Government heat pump support, and free expert energy assessments for homes
+          Solar panels, heat pump grants, full central heating upgrades, and non-condensing boiler replacement for homes
           across the UK
         </p>
         <div className="mx-auto h-1.5 w-20 rounded-full bg-primary" aria-hidden />
       </div>
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-gutter md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-gutter sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((s) => (
           <article
             key={s.id}
-            className="glass service-card reveal group flex flex-col rounded-3xl p-8 shadow-premium active"
+            className="glass service-card reveal group flex flex-col overflow-hidden rounded-3xl shadow-premium active"
           >
+            <div className="relative h-48 w-full">
+              <Image
+                src={serviceCardImages[s.id].src}
+                alt={serviceCardImages[s.id].alt}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-8">
             <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-on-primary">
               <MaterialIcon name={s.icon} className="text-3xl" />
             </div>
@@ -60,6 +90,7 @@ export default function Services() {
               {s.cta}
               <MaterialIcon name="chevron_right" className="transition-transform group-hover:translate-x-1" />
             </Link>
+            </div>
           </article>
         ))}
       </div>

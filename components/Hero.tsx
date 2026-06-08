@@ -1,19 +1,12 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import HeroCarousel from '@/components/HeroCarousel'
 import MaterialIcon from '@/components/MaterialIcon'
 
 export default function Hero() {
   return (
     <section className="relative box-border flex min-h-[100dvh] min-h-screen flex-col justify-center overflow-hidden px-4 pb-10 pt-[var(--nav-height)] md:px-margin-desktop md:pb-16">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero.png"
-          alt="UK home with rooftop solar panels installed under the GreenHomesNW Solar Plan"
-          fill
-          priority
-          className="object-cover scale-105"
-          sizes="100vw"
-        />
+        <HeroCarousel />
         <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent" aria-hidden />
       </div>
 

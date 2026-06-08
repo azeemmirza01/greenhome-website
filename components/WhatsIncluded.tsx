@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import MaterialIcon from '@/components/MaterialIcon'
+import { whatsIncludedImages } from '@/lib/images'
 
 const items = [
   {
@@ -36,12 +38,23 @@ export default function WhatsIncluded() {
         {items.map((f, i) => (
           <div
             key={f.title}
-            className="reveal glass rounded-3xl p-8 shadow-premium active"
+            className="reveal glass overflow-hidden rounded-3xl shadow-premium active"
             style={{ transitionDelay: `${i * 100}ms` }}
           >
+            <div className="relative h-40 w-full">
+              <Image
+                src={whatsIncludedImages[i].src}
+                alt={whatsIncludedImages[i].alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 25vw"
+              />
+            </div>
+            <div className="p-8">
             <MaterialIcon name={f.icon} className="mb-5 text-4xl text-primary" />
             <h3 className="mb-3 text-headline-md">{f.title}</h3>
             <p className="card-text text-body-md text-on-surface-variant">{f.text}</p>
+            </div>
           </div>
         ))}
       </div>
