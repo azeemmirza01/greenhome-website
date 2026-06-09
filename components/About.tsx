@@ -25,7 +25,7 @@ export default function About() {
             className="img-zoom object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-          <div className="glass absolute bottom-8 left-8 max-w-xs rounded-2xl p-6">
+          <div className="glass absolute bottom-2 left-4 max-w-xs rounded-2xl p-6">
             <div className="mb-2 flex items-center gap-3">
               <span className="text-3xl font-bold text-primary">4.9★</span>
               <span className="text-body-md font-semibold">Verified customer rating</span>
