@@ -15,7 +15,7 @@ export default function CtaSection() {
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-0 bg-primary-fixed/60"
+        className="pointer-events-none absolute inset-0 bg-primary-fixed/50"
         aria-hidden
       />
       <div
@@ -23,13 +23,13 @@ export default function CtaSection() {
         aria-hidden
       />
       <div className="reveal-scale relative z-10 mx-auto max-w-container-max text-center">
-        <h2 className="mb-6 text-[36px] font-bold leading-tight text-on-primary-fixed md:text-[52px]">
+        <h2 className="mb-6 text-[36px] font-bold leading-tight text-white md:text-[52px]">
           Find Out If You Could Make a Net Saving From Year One
         </h2>
-        <p className="mx-auto mb-6 max-w-2xl text-body-lg font-semibold text-on-primary-fixed-variant">
+        <p className="mx-auto mb-6 max-w-2xl text-body-lg font-semibold text-black">
           Free eligibility check · No obligation · No impact on credit score · Instant decisions
         </p>
-        <p className="mx-auto mb-12 max-w-2xl text-body-md text-on-primary-fixed-variant">
+        <p className="mx-auto mb-12 max-w-2xl text-body-md text-black">
           Whether you’re interested in solar panels with no upfront cost, or want to find out about the Boiler Upgrade
           Scheme for an air source heat pump, {siteConfig.name} will guide you through every step, for free.
         </p>
@@ -49,10 +49,10 @@ export default function CtaSection() {
             Call
           </a>
         </div>
-        <p className="mt-6 text-sm text-on-primary-fixed-variant">
+        <p className="mt-6 text-sm text-black">
           Lines open {siteConfig.hours}
         </p>
-        <p className="mx-auto mt-10 max-w-2xl text-sm text-on-primary-fixed-variant">
+        <p className="mx-auto mt-10 max-w-2xl text-sm text-black">
           Trusted by homeowners and landlords across England, Scotland &amp; Wales.
         </p>
       </div>
