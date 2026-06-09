@@ -16,14 +16,14 @@ export const heroSlides: SiteImage[] = [
 
 const postHeroImages: SiteImage[] = [
   // Services (5)
-  { src: '/images/pay-option-1.png', alt: 'Solar panels from £0 upfront with flexible monthly payments' },
+  { src: '/images/application-step.png', alt: 'Apply for solar panels from £0 upfront on tablet' },
   { src: '/images/air-source-heat-pump-1.png', alt: 'Air source heat pump grants' },
   { src: '/images/ftch.png', alt: 'Full-time central heating' },
   { src: '/images/non-condensing-boiler-1.png', alt: 'Non-condensing boiler replacement' },
   { src: '/images/home-assessment.png', alt: 'Free home energy assessment' },
   // How it works (4)
   { src: '/images/consultation-design.png', alt: 'Property survey and custom solar system design' },
-  { src: '/images/application-step.png', alt: 'Secure online Solar Plan application' },
+  { src: '/images/pay-option-2.png', alt: 'Secure online Solar Plan application on tablet' },
   { src: '/images/battery-storage.png', alt: 'Solar and battery system installed in your UK home' },
   { src: '/images/happy-family-relax.png', alt: 'UK family enjoying energy savings from their solar plan' },
   // What's included (4)
@@ -32,7 +32,7 @@ const postHeroImages: SiteImage[] = [
   { src: '/images/non-condensing-boiler-2.png', alt: 'Maintenance and repairs covered under your Solar Plan' },
   { src: '/images/happy-customer-2.png', alt: 'Equipment replacement protection for your plan lifetime' },
   // Payment, about, CTA (3)
-  { src: '/images/pay-option-2.png', alt: 'Flexible monthly Solar Plan payment options on tablet' },
+  { src: '/images/pay-option-1.png', alt: 'Example monthly payment options for a solar and battery system' },
   { src: '/images/happy-customer-1.png', alt: 'Happy UK homeowners who have switched to clean energy with GreenHomesNW' },
   { src: '/images/cta-section.png', alt: 'GreenHomesNW solar home at sunset — check your eligibility for year-one savings' },
 ]
