@@ -66,4 +66,8 @@ export const aboutImage = postHeroImages[14]
 
 export const paymentImage = postHeroImages[13]
 
-export const ctaImage = postHeroImages[15]
+/** CTA section background carousel */
+export const ctaSlides: SiteImage[] = [
+  { src: '/images/cta-section.png', alt: 'GreenHomesNW solar home at sunset — check your eligibility for year-one savings' },
+  { src: '/images/installation-process.png', alt: 'GreenHomesNW team installing solar panels on a UK property' },
+]
