@@ -16,21 +16,26 @@ const points = [
 export default function About() {
   return (
     <section className="bg-surface-container-low py-24" id="about">
-      <div className="mx-auto grid max-w-container-max grid-cols-1 items-center gap-20 px-4 md:grid-cols-2 md:px-margin-desktop">
-        <div className="reveal-left group relative h-[560px] overflow-hidden rounded-3xl shadow-2xl">
-          <Image
-            src={aboutImage.src}
-            alt={aboutImage.alt}
-            fill
-            className="img-zoom object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-          <div className="glass absolute bottom-2 left-4 max-w-xs rounded-2xl p-6">
-            <div className="mb-2 flex items-center gap-3">
-              <span className="text-3xl font-bold text-primary">4.9★</span>
-              <span className="text-body-md font-semibold">Verified customer rating</span>
+      <div className="mx-auto grid max-w-container-max grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-20 md:px-margin-desktop">
+        <div className="reveal-left mx-auto flex w-full max-w-2xl flex-col items-center justify-center gap-4 md:max-w-none">
+          <div className="group relative aspect-[3/2] w-full overflow-hidden rounded-3xl shadow-2xl">
+            <Image
+              src={aboutImage.src}
+              alt={aboutImage.alt}
+              fill
+              className="img-zoom object-cover object-center"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+          <div className="w-full rounded-3xl bg-white p-6 text-left shadow-premium sm:p-8">
+            <div className="mb-3 flex items-center gap-1.5">
+              <span className="text-4xl font-bold leading-none text-primary">4.9</span>
+              <MaterialIcon name="star" className="text-[2rem] text-primary" filled />
             </div>
-            <p className="text-sm text-on-surface-variant">
+            <p className="mb-2 text-base font-semibold text-on-surface sm:text-lg">
+              Verified customer rating
+            </p>
+            <p className="text-sm leading-relaxed text-on-surface-variant sm:text-[0.9375rem]">
               Trusted by homeowners and landlords across the UK.
             </p>
           </div>

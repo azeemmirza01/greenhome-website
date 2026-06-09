@@ -8,7 +8,6 @@ export const heroSlides: SiteImage[] = [
   { src: '/images/hero-section.png', alt: 'Modern UK home with rooftop solar panels under the GreenHomesNW Solar Plan' },
   { src: '/images/solar-house-1.png', alt: 'GreenHomesNW van outside a UK home with solar panels and battery storage' },
   { src: '/images/solar-house-2.png', alt: 'UK red-brick home with a full solar panel array on the roof' },
-  { src: '/images/solar-installation.png', alt: 'Professional solar panel installation on a UK residential property' },
   { src: '/images/solar-working-1.png', alt: 'Technician installing solar panels on a UK residential roof' },
   { src: '/images/solar-working-2.png', alt: 'Accredited engineer fitting solar panels on a UK home' },
   { src: '/images/installation-process.png', alt: 'GreenHomesNW team installing solar panels on a UK property' },
@@ -24,7 +23,7 @@ const postHeroImages: SiteImage[] = [
   // How it works (4)
   { src: '/images/consultation-design.png', alt: 'Property survey and custom solar system design' },
   { src: '/images/pay-option-2.png', alt: 'Secure online Solar Plan application on tablet' },
-  { src: '/images/battery-storage.png', alt: 'Solar and battery system installed in your UK home' },
+  { src: '/images/solar-installation.png', alt: 'Professional solar panel installation on a UK residential property' },
   { src: '/images/happy-family-relax.png', alt: 'UK family enjoying energy savings from their solar plan' },
   // What's included (4)
   { src: '/images/battery-storage-section.png', alt: 'Solar PV and battery system installation' },
